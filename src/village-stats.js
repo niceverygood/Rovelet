@@ -1,0 +1,7 @@
+import BALANCE from './balance.json' with {type:'json'};
+const F=BALANCE.facilities;
+import {MAX_BUILDING_LEVEL,weaponStats,maxSlots} from './data.js';
+export function villageStats(save){const level=key=>Math.max(0,Math.min(MAX_BUILDING_LEVEL,Number.isInteger(save.buildings?.[key])?save.buildings[key]:0)),garage=level('garage'),smithy=level('smithy'),greenhouse=level('greenhouse');return Object.freeze({maxHp:F.baseHp+garage*F.hpPerGarage,damageMultiplier:1+smithy*F.damagePerSmithy,intervalMultiplier:1-smithy*F.intervalPerSmithy,speedBonus:garage*F.speedPerGarage,bonusSlots:Math.floor(garage/F.slotEvery),regen:greenhouse*F.regenPerGreenhouse,rewardMultiplier:1+greenhouse*F.rewardPerGreenhouse,boostCooldown:Math.max(F.boostMin,F.boostBase-garage*F.boostPerGarage),shieldCooldown:Math.max(F.shieldMin,F.shieldBase-greenhouse*F.shieldPerGreenhouse),repairAmount:F.repairBase+garage*F.repairPerGarage+greenhouse*F.repairPerGreenhouse});}
+export function combatWeaponStats(key,level,run){const w=weaponStats(key,level),stats=run?.villageStats;return {...w,damage:w.damage*(stats?.damageMultiplier??1),rate:w.rate*(stats?.intervalMultiplier??1)};}
+export function runSlots(run){return Math.min(BALANCE.progression.maxSlots,maxSlots(run.stage)+(run.villageStats?.bonusSlots??0));}
+export function upgradeStats(save,key){const level=save.buildings?.[key];if(!Number.isInteger(level)||level>=MAX_BUILDING_LEVEL)return null;return {before:villageStats(save),after:villageStats({...save,buildings:{...save.buildings,[key]:level+1}})};}

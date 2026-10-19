@@ -1,0 +1,18 @@
+import * as THREE from 'three';import {WEAPONS} from './data.js';
+export function weaponBeam(world,start,end,key='railgun'){const color=WEAPONS[key]?.color??0xbde8ff,delta=end.clone().sub(start),length=delta.length();if(length<.01)return;const lightning=key==='lightning'||key==='tesla'||key==='stormcloud',mesh=world.particle?world.particle(lightning?'bolt':'beam',color):new THREE.Mesh(new THREE.CylinderGeometry(.045,.045,1,8),new THREE.MeshBasicMaterial({color,transparent:true,opacity:.95,depthWrite:false}));mesh.material.blending=THREE.AdditiveBlending;mesh.material.opacity=.95;mesh.position.copy(start).add(end).multiplyScalar(.5);mesh.scale.y=length;mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),delta.normalize());world.feedback.add(mesh,new THREE.Vector3(),.16,'beam',0);}
+export function weaponImpact(world,position,key,strength=.9,reduced=false,{physicalShard=false,fragmentDirection}={}){const w=WEAPONS[key==='burn'?'fireball':key];if(!w||['cannon','ballista','mortar','steam'].includes(key)){world.feedback.impact(position,new THREE.Vector3(0,-1,0),{strength,reduced,...(physicalShard&&key==='cannon'?{physicalShard:true,fragmentDirection}:{})});return;}world.feedback.ring(position,w.color,strength*1.2);const ice=['icebolt','icicle','frostbomb'].includes(key),fire=['fireball','meteor','rocket','clusterbomb','flamethrower','burn'].includes(key),wind=['sonicwave','tornado'].includes(key);for(let i=0;i<(reduced?3:8);i++){const color=i%3===0?0xfff3d8:w.color,mesh=world.particle?world.particle(ice?'ice':wind?'wind':fire?'fire':'gem',color):new THREE.Mesh(new THREE.OctahedronGeometry(.065,0),new THREE.MeshBasicMaterial({color,transparent:true,opacity:1,depthWrite:false}));mesh.position.copy(position);const angle=i*Math.PI*.77,velocity=new THREE.Vector3(Math.cos(angle)*(1+Math.random()),.4+Math.random()*2,Math.sin(angle)*(1+Math.random())).multiplyScalar(strength);world.feedback.add(mesh,velocity,ice?.5:fire?.35:.3,ice?'spark':'glitter',ice?5:1);}if(fire)world.puff(position,w.color,reduced?1:3);}
+export function projectileTrail(world,shot,dt){const key=shot.w?.key??shot.key,w=WEAPONS[key];if(!w||!['rocket','meteor','fireball','icebolt','icicle','crystal','beehive','acidflask'].includes(key))return;shot.trailTime=(shot.trailTime??0)+dt;if(shot.trailTime<.06)return;shot.trailTime%=.06;const mesh=world.particle?world.particle('trail',w.color):new THREE.Mesh(new THREE.IcosahedronGeometry(.045,0),new THREE.MeshBasicMaterial({color:w.color,transparent:true,opacity:.6,depthWrite:false}));mesh.scale.setScalar(key==='meteor'?1.78:1);mesh.material.opacity=.6;mesh.position.copy(shot.mesh.position);world.feedback.add(mesh,new THREE.Vector3(0,.08,0),.23,'glitter',0);}
+
+// Called after the existing primary and victim effects have claimed their slots.
+export const PRIMARY_EXPLOSION_PRESSURE=Object.freeze({rocket:.10,meteor:.16,clusterbomb:.08,landmine:.13});
+export function primaryExplosion(world,position,key,reduced=false,direction){
+ if(reduced)return;
+ world.feedback.explosionBurst?.(position,key,direction);
+ const amount=typeof key==='string'&&Object.hasOwn(PRIMARY_EXPLOSION_PRESSURE,key)?PRIMARY_EXPLOSION_PRESSURE[key]:0,root=world.game?.player?.root;
+ if(!amount||!position?.isVector3||![position.x,position.y,position.z].every(Number.isFinite)||!root?.isObject3D||typeof world.feedback.cameraKick!=='function')return;
+ // Use the actual actor world position, independent of camera-follow lag.
+ const player=root.getWorldPosition(new THREE.Vector3());
+ if(![player.x,player.y,player.z].every(Number.isFinite))return;
+ const distance=Math.hypot(position.x-player.x,position.z-player.z);
+ if(Number.isFinite(distance))world.feedback.cameraKick(amount/(1+.15*distance),false);
+}

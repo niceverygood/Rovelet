@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-labelledby="title desc">
+  <title id="title">Wandering Hearth icon candidate</title>
+  <desc id="desc">Cream castle with red roofs, a teal cart, wooden wheels and a green flag.</desc>
+  <path fill="#E3EBD2" d="M0 0H108V108H0Z"/>
+  <path fill="#805936" d="M64 26H65.5V44H64Z"/>
+  <path fill="#397F4C" d="M65.5 27L73 30.5L65.5 34Z"/>
+  <path fill="#FFF0CF" d="M30 45H78V65H30Z"/>
+  <path fill="#DA6848" d="M27 47L42 29L57 47Z"/>
+  <path fill="#DA6848" d="M50 47L64 30L79 47Z"/>
+  <path fill="#BB503B" d="M27 47H79V49H27Z"/>
+  <path fill="#805936" d="M48 54H58V66H48Z"/>
+  <path fill="#6B5140" d="M35 53H41V60H35Z"/>
+  <path fill="#6B5140" d="M66 53H72V60H66Z"/>
+  <path fill="#4F8F8A" d="M29 64H79V70H29Z"/>
+  <path fill="#805936" d="M44 73A6 6 0 1 1 32 73A6 6 0 1 1 44 73Z"/>
+  <path fill="#805936" d="M76 73A6 6 0 1 1 64 73A6 6 0 1 1 76 73Z"/>
+  <path fill="#B18351" d="M41 73A3 3 0 1 1 35 73A3 3 0 1 1 41 73Z"/>
+  <path fill="#B18351" d="M73 73A3 3 0 1 1 67 73A3 3 0 1 1 73 73Z"/>
+  <path fill="#805936" d="M37 69H39V77H37ZM34 72H42V74H34ZM69 69H71V77H69ZM66 72H74V74H66Z"/>
+</svg>

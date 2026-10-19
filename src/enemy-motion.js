@@ -1,0 +1,8 @@
+import BALANCE from './balance.json' with {type:'json'};
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const approach=(a,b,d)=>a<b?Math.min(b,a+d):Math.max(b,a-d);
+const wrap=a=>((a+Math.PI)%(Math.PI*2)+Math.PI*2)%(Math.PI*2)-Math.PI;
+export const ENEMY_MOTION=BALANCE.enemyMotion;
+export function createEnemyMotion(heading=0){return {heading,speed:0,yawRate:0,distance:0,steering:0,acceleration:0};}
+export function stepEnemyMotion(state,{kind='cannon',dx,dz,distance=Math.hypot(dx,dz),charging=false,chargeHeading,windup=false,speedScale=1,detouring=false},dt){const profile=ENEMY_MOTION[kind]??ENEMY_MOTION.cannon;let heading=state.heading,speed=state.speed,yawRate=state.yawRate,travel=0,mx=0,mz=0;const target=charging||(windup&&Number.isFinite(chargeHeading))?chargeHeading:Math.atan2(dx,dz),angle=wrap(target-heading),turn=charging?.18:profile.turn;let remaining=Math.min(dt,.1);while(remaining>0){const h=Math.min(remaining,1/120),delta=wrap(target-heading),wantedYaw=clamp(delta*3,-turn,turn);yawRate=approach(yawRate,wantedYaw,h*(charging?2:6));if(charging)yawRate=clamp(yawRate,-turn,turn);const alignment=Math.max(0,Math.cos(delta)),desired=windup?0:charging?8:profile.speed*(detouring?1:clamp((distance-profile.stop)/1.8,0,1))*alignment;const acceleration=charging?16:desired<speed?3.2:profile.acceleration;const previous=speed;speed=approach(speed,desired*speedScale,h*acceleration);const step=(previous+speed)*.5*h,mid=heading+yawRate*h*.5;mx+=Math.sin(mid)*step;mz+=Math.cos(mid)*step;travel+=Math.abs(step);heading+=yawRate*h;remaining-=h;}return {heading,speed,yawRate,distance:state.distance+travel,steering:clamp(-yawRate/Math.max(.3,speed)*1.4,-.45,.45),acceleration:(speed-state.speed)/Math.max(dt,.0001),dx:mx,dz:mz,angle};}
+

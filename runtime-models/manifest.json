@@ -1,0 +1,820 @@
+{
+  "format": 1,
+  "policySha256": "24838db39d15c65a4c6fcd28c1abe820c8afcd4b066c2b430c0252d0fbd10bab",
+  "generatedAt": "2026-10-17T16:27:19.687Z",
+  "browser": "155.0.4283.45",
+  "assets": [
+    {
+      "id": "ballista",
+      "sourceSha256": "ad34e88c4e682ba33de5bdb2cc3eba618a2dd16a263d862ed7676e23af545c5d",
+      "runtimeSha256": "7101adcc3c340592851142829e887a590711050fdc12ece0eb4545ffe028dc27",
+      "sourceBytes": 15860520,
+      "runtimeBytes": 3246164,
+      "geometrySha256": [
+        "32f54d9dd8bc5b068247fc9b481d147919aaef5083f6ee837ace525f97e61c91",
+        "6759b8edd4a2c42de262874f42f9101a4b5c6d5c29e0bdd097db1e580340f486",
+        "670ba5a6adc260c9f2287606ee71dc5d3797691ecb92bd67f30a35a510107640",
+        "4ec6fff0e5f44b4f4bfa2f6437b42ff3e431137ca0e752f55d1ab95b3083b2ad"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "09dd67f14e363f057296057048cf2965d7cdd716ddef26f232d530d5bc94188d",
+          "decodedRgbaSha256": "09dd67f14e363f057296057048cf2965d7cdd716ddef26f232d530d5bc94188d",
+          "bytes": 1801981
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "6e25a17f1981063ec4270839e05fc9638580d32f40bce6b41b8d4b233e191aaa",
+          "decodedRgbaSha256": "6e25a17f1981063ec4270839e05fc9638580d32f40bce6b41b8d4b233e191aaa",
+          "bytes": 398685
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "53d00b22279ac372e2afa7384254121e3ecef0f8779b917c71f98e3f10f5e69f",
+          "decodedRgbaSha256": "53d00b22279ac372e2afa7384254121e3ecef0f8779b917c71f98e3f10f5e69f",
+          "bytes": 376641
+        }
+      ]
+    },
+    {
+      "id": "beehive",
+      "sourceSha256": "4c7d230322776e546117840299f202997e4f3b17a7dad64b5f92472aa39d6c95",
+      "runtimeSha256": "fb34756b059896321d27c48a2b9b8977f4f9cf5d14189d8abee130ec6f588e22",
+      "sourceBytes": 16544904,
+      "runtimeBytes": 3440108,
+      "geometrySha256": [
+        "1b63594277f5ac102a485e149cb133b4745aa4b5cbb374274e068155b2fba717",
+        "c2c40bf040e09948e25ec20bbcad7e4d652779136a7f6ac7dd70456cae4749f9",
+        "901cc42bbe3cf6b9f00a2ac81393ea3b52074c021f447bbb90d950ddb37aa15e",
+        "9f9fe42f4e7ac5310724e752499a0808fdd51a43c8c3b3d6a7294a12dcb40d59"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "bbac663cfc10ca08c74fd73e06ba0bc6698de669f2c154a7424fbe829ff07cd4",
+          "decodedRgbaSha256": "bbac663cfc10ca08c74fd73e06ba0bc6698de669f2c154a7424fbe829ff07cd4",
+          "bytes": 2008614
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "af1850f5df4a97116559bb58dc10852c9522a46ea882bc6e66ba3779ddcfd8b4",
+          "decodedRgbaSha256": "af1850f5df4a97116559bb58dc10852c9522a46ea882bc6e66ba3779ddcfd8b4",
+          "bytes": 434611
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "725cbbcce80ba24b8b4be16dbc665aa92a1fdfc8f661b000389cfeeb27d87a2e",
+          "decodedRgbaSha256": "725cbbcce80ba24b8b4be16dbc665aa92a1fdfc8f661b000389cfeeb27d87a2e",
+          "bytes": 432118
+        }
+      ]
+    },
+    {
+      "id": "cannon",
+      "sourceSha256": "2831eaba10d6fa3cc9ddbef126f05a6853a7303dbbbd5465487b3f39781c08bd",
+      "runtimeSha256": "57b328ac1b813be981622b330c65b292533044eaf8c72d79346a7bf20e13eab0",
+      "sourceBytes": 16696332,
+      "runtimeBytes": 3447232,
+      "geometrySha256": [
+        "c059f64d7682e9e9174298a77ff02f78c066ed44535ab7a1a87770b632ed112d",
+        "3e91d7f1f0e52855b6032b16e894e6e9c96df1fbda08c503a8fe452fab5e3ef8",
+        "700cef4e4a4f9861999d13593bc6b0c2fa894ddf939502b1c7f2cb9c0186b4aa",
+        "c98c20ec1266b6fd45145b225512b43f5c0da5849f6745edb9b9dfea071e0a87"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "6ec0f974a5413557e516199f8160d1e76e2415c9eab5bc58d51e0e9f6a2e348f",
+          "decodedRgbaSha256": "6ec0f974a5413557e516199f8160d1e76e2415c9eab5bc58d51e0e9f6a2e348f",
+          "bytes": 1997887
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "6133ee0e190821470a033337714416d3fd075806bc43cad6aa448ab729f774de",
+          "decodedRgbaSha256": "6133ee0e190821470a033337714416d3fd075806bc43cad6aa448ab729f774de",
+          "bytes": 455300
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "90950d199ed4645c2a3302c175fbece4631bc37adfbadff35bfe798ebff03bad",
+          "decodedRgbaSha256": "90950d199ed4645c2a3302c175fbece4631bc37adfbadff35bfe798ebff03bad",
+          "bytes": 428763
+        }
+      ]
+    },
+    {
+      "id": "castle-large",
+      "sourceSha256": "5055348daf3d8da7972e270b96ab98fac9cf7cbcd2aa75987cc6fd1af3a37dbe",
+      "runtimeSha256": "bc08a8f5ff7a074d49b69644fb5f5615a3e341f2eeda45c0931090f5a381a223",
+      "sourceBytes": 19217044,
+      "runtimeBytes": 9024220,
+      "geometrySha256": [
+        "48bdaefe898cb0922020fae8e1b5d2a533107ab5458972d1ebd0072e8f3b05c7",
+        "5417e314a6fd606fc3a8d9eb463b324f4daf67b0d1bde0025c8822f415e17912",
+        "56d07f56ead68b5113fe3d8400bf04b8bca2594df7f593ff87ddece37214e758",
+        "5d443c2a6610ed423320ef624668ffee41b19e2b5858e6786d9f6ee56cde7fd2"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "202f3cd23b1f1daf31922714695c321e3d0664c57179c58780912a9bd19be2d5",
+          "decodedRgbaSha256": "202f3cd23b1f1daf31922714695c321e3d0664c57179c58780912a9bd19be2d5",
+          "bytes": 7367818
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "02053232cb51fae77bd839ba0fbffe4aeeab4c191a39aee661b030b5062fc2c0",
+          "decodedRgbaSha256": "02053232cb51fae77bd839ba0fbffe4aeeab4c191a39aee661b030b5062fc2c0",
+          "bytes": 454225
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "5b6936cf120377e172bdcc28eb6e876ed2a12dd28be0e68a8e6978446f8cc372",
+          "decodedRgbaSha256": "5b6936cf120377e172bdcc28eb6e876ed2a12dd28be0e68a8e6978446f8cc372",
+          "bytes": 447256
+        }
+      ]
+    },
+    {
+      "id": "castle-medium",
+      "sourceSha256": "e852db96e1ae7f529ddaac233480acf3300bae182d48068afdd15ff98b72f338",
+      "runtimeSha256": "ea291b5c849660264ebb24e2530058f6c717472a81d24b288429db8785d6dc9c",
+      "sourceBytes": 19754420,
+      "runtimeBytes": 9086764,
+      "geometrySha256": [
+        "e3212acc6fddd21a9cf7b9906ebec3ddeb8b3429b6964edbf60f0ffea45f28f6",
+        "67757b6c60dda97c570fd231691f163322523eeb0432488b31f391909c16123e",
+        "1ec33450962bdfb77062dc8a6056c217914f2dd8c7b2cf95332a4cf1fa875cb7",
+        "67920a7901bd945b812a8d43e74e0c556b5c9509d25fc0a3e69408128dc34eaa"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "aa729d0bf384931ab5a226d9c1e238a29e09f4872d63b9f43aa089e9c51413bf",
+          "decodedRgbaSha256": "aa729d0bf384931ab5a226d9c1e238a29e09f4872d63b9f43aa089e9c51413bf",
+          "bytes": 7398088
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "ed2955dbd31b9c2ea20e4c30a9ea978b9e81fee8febe1d29ea3ff95347f6f8d3",
+          "decodedRgbaSha256": "ed2955dbd31b9c2ea20e4c30a9ea978b9e81fee8febe1d29ea3ff95347f6f8d3",
+          "bytes": 431810
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "3962c85f4d9861b06beb99c2a72fe5fe3867b8abba0e10849d7a58ffea66d245",
+          "decodedRgbaSha256": "3962c85f4d9861b06beb99c2a72fe5fe3867b8abba0e10849d7a58ffea66d245",
+          "bytes": 460528
+        }
+      ]
+    },
+    {
+      "id": "castle-small",
+      "sourceSha256": "656b9d727f12344cd9c999ecf4f8757eaf83265b53eea2f923440797aabf96f9",
+      "runtimeSha256": "74c5c536fc20648afd42ea7a04d58265639ddda16e7437b5b893f833d7c2d746",
+      "sourceBytes": 18735604,
+      "runtimeBytes": 8765692,
+      "geometrySha256": [
+        "9003e1250d0c46eab20b6e020a13d108d45e274188806209b660e39e5f01cc0f",
+        "a7ba546b8eee4502175338f5c280b9aeb8c1bd723696381a4590d86371646862",
+        "ffd7c9b41462cc0cc2745e415f3e6f40d7aac0eeba0e605c011bd99d121a996e",
+        "812e17896aee99e0312340fe20ab1255cf7f4727c2c7c2baa733a3bede97d92b"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 2048,
+          "height": 2048,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "9c35075c3b4cfadaa6ea9a593902c3471e8a9754cf9681b3a890042a8cffa487",
+          "decodedRgbaSha256": "9c35075c3b4cfadaa6ea9a593902c3471e8a9754cf9681b3a890042a8cffa487",
+          "bytes": 7294319
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "6e5ee4a8c8441c177da7862d4c0f5052b67c76cc7b9767aa2c0012d4b1456b95",
+          "decodedRgbaSha256": "6e5ee4a8c8441c177da7862d4c0f5052b67c76cc7b9767aa2c0012d4b1456b95",
+          "bytes": 439386
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "c5e68287daf28491099ab4904e4b07da138300b47e7306c8d1b612c23a11de76",
+          "decodedRgbaSha256": "c5e68287daf28491099ab4904e4b07da138300b47e7306c8d1b612c23a11de76",
+          "bytes": 456596
+        }
+      ]
+    },
+    {
+      "id": "enemy-tower",
+      "sourceSha256": "c38591ea6feeb2f2713b2c9f2290dccecaf2d5f05e76f3855e2d3bb296951bad",
+      "runtimeSha256": "2d6699b0a924908a0b8313fa00ca7a662915e13bf703eb616d7a1901d16329e0",
+      "sourceBytes": 17181488,
+      "runtimeBytes": 3486124,
+      "geometrySha256": [
+        "06fb59d5f55940efe163ed19fd67a7ad0702eb0f6d9fc9f4c9db24d98239e62b",
+        "fcee2d8a4dce9609f33bdb4b4dccc1747b02bedfffa140f7d9c9de6718d12c97",
+        "2830982a4707020c6acbf9a53c89178b4da425e9e3656b7d5a8ae01e33b513f6",
+        "d607d8b60ba971234f344caaf538f6c513ca02ac6fe130216a3d6b4defe1f5d9"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "87975f15481833c33578316670a256872fb95318d47832e941ffa41ea5795b40",
+          "decodedRgbaSha256": "87975f15481833c33578316670a256872fb95318d47832e941ffa41ea5795b40",
+          "bytes": 2026161
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "29d2e3a8db7bfa2733af663f4c5db3d312e82a2938f6ecd012c90e596e77152c",
+          "decodedRgbaSha256": "29d2e3a8db7bfa2733af663f4c5db3d312e82a2938f6ecd012c90e596e77152c",
+          "bytes": 428114
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "92ec9005b89ec943825179989d8594c19c1bcc57757f6e5420c7a74cc1820638",
+          "decodedRgbaSha256": "92ec9005b89ec943825179989d8594c19c1bcc57757f6e5420c7a74cc1820638",
+          "bytes": 435859
+        }
+      ]
+    },
+    {
+      "id": "greenhouse",
+      "sourceSha256": "aa6673466f7cb63333205ed30ff9bd88f4a9cfb6271fe7c2af2924ecd6cc6a5e",
+      "runtimeSha256": "152fb8be2280befff31281b106ad0e12f3279806fdad01e40b2897df4bbbe16a",
+      "sourceBytes": 18271440,
+      "runtimeBytes": 3676640,
+      "geometrySha256": [
+        "40079314a50f615d89feebb93a8f1ddf4dc29213bc1bcbe10f2a116d53169a5e",
+        "b8c7beb93b54e00a1d42077c504e6aa1915fe0a3a17f179cde8ffcc3b23328db",
+        "480e4e0750a6d95761e03fc6c48bdf23f14114ca3cb4949ebe36025fc013a7ee",
+        "6ba506cd78883e6f74ff0de5153db177e7c8b60d11e4f401aa8d4fded3592e8a"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "46a2d51a282e5353c0b0fb4c829716f8ffc75b24c3a0db5290dd8f8542dbcc7f",
+          "decodedRgbaSha256": "46a2d51a282e5353c0b0fb4c829716f8ffc75b24c3a0db5290dd8f8542dbcc7f",
+          "bytes": 1998002
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "3b009febe6adf6fa87bb0bf7d4fecf8de10ee97e74e70378e25c60473474c2eb",
+          "decodedRgbaSha256": "3b009febe6adf6fa87bb0bf7d4fecf8de10ee97e74e70378e25c60473474c2eb",
+          "bytes": 432865
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "ebaa013d4181d31008e062d712743e163ebf9cc6928b981f7e9b64baa5b2389c",
+          "decodedRgbaSha256": "ebaa013d4181d31008e062d712743e163ebf9cc6928b981f7e9b64baa5b2389c",
+          "bytes": 426090
+        }
+      ]
+    },
+    {
+      "id": "house",
+      "sourceSha256": "c1f586057962bedfa9a2d3bfdc6f7c23431e78b06514ac0b36335c493a028867",
+      "runtimeSha256": "3f63ab22b8e88aa25f3ca217b5af0998fe648a4e8ea76c018cdfdc8fcee603f9",
+      "sourceBytes": 19217228,
+      "runtimeBytes": 3688124,
+      "geometrySha256": [
+        "516e962f108e4b93c60a820521d7f847dadc8a4a3aa4498d231910273ee10eb7",
+        "f9b629a4f21b49eaf7d7f1c23f02e476d79a66eeaf3755c4d5642a114fad4805",
+        "af157d72959e9dba75dc0b345b40818670439cc1dbe5efedbbc8ea356acf20ef",
+        "ef674953902cd8e1aa6cd50f033012d99ec8fc87cb5a7bae825e9f616085d573"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "da9fe174935f97520d28dcb389d169e4bc9ebc8ccf8a10dae8af019f148bbd45",
+          "decodedRgbaSha256": "da9fe174935f97520d28dcb389d169e4bc9ebc8ccf8a10dae8af019f148bbd45",
+          "bytes": 2196136
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "d3ee285dcee148696809cdd5de9daaea9d81d80055d0e782f4f8f2cc041426cf",
+          "decodedRgbaSha256": "d3ee285dcee148696809cdd5de9daaea9d81d80055d0e782f4f8f2cc041426cf",
+          "bytes": 438217
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "18297c8b770513082c35541fdba182bde7ec37f5f6c9be59937aa6447b873707",
+          "decodedRgbaSha256": "18297c8b770513082c35541fdba182bde7ec37f5f6c9be59937aa6447b873707",
+          "bytes": 466126
+        }
+      ]
+    },
+    {
+      "id": "impact-shard",
+      "sourceSha256": "6fda42d69068846593bb24b5319ba6eb563fe503fe643637df1d4560205b0fd0",
+      "runtimeSha256": "37f506ebc453c0f999ff4abe7cbeb0371d42f75550d5bd67550aed112175cd8b",
+      "sourceBytes": 8162088,
+      "runtimeBytes": 3254636,
+      "geometrySha256": [
+        "bf2f86734feb360a1a765c51fe9ce4c93eab8ee92ef26735398b1de92a43255e",
+        "976394b6de670c9c74a9629eb6d0264be11634c279415f64375316a8853db38e",
+        "166ac40edaaa8f8e820105d2709e69066680f3d1b783f5d1351862b518ade98e",
+        "7523abb4a6a26eab5049a7f49cb3d5fabcb7c2059d8520a0a5c14d04cc883e59"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "369cb51e22f9888cf04564d2b5517caa26d959db799192f71ea4665d8f9f3f69",
+          "decodedRgbaSha256": "369cb51e22f9888cf04564d2b5517caa26d959db799192f71ea4665d8f9f3f69",
+          "bytes": 2249490
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "3cdcb240e59e2fd30fe380445a79bd777f038e4ca7220e2e34715e97a0ab5801",
+          "decodedRgbaSha256": "3cdcb240e59e2fd30fe380445a79bd777f038e4ca7220e2e34715e97a0ab5801",
+          "bytes": 458277
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "14ec3ca267f9639b09f3a6334705f658e2ef7d6973b4e68d3025d450d6b68177",
+          "decodedRgbaSha256": "14ec3ca267f9639b09f3a6334705f658e2ef7d6973b4e68d3025d450d6b68177",
+          "bytes": 528658
+        }
+      ]
+    },
+    {
+      "id": "projectile-ironshot",
+      "sourceSha256": "86ee33018d86bb1f429fb5b49195f46595dbc7f03ef799886a9fbf2cf0351486",
+      "runtimeSha256": "d754502878c3eb6bb35779725ccbcd95af047fe1718474cb130917b99e0ed643",
+      "sourceBytes": 6376684,
+      "runtimeBytes": 2789412,
+      "geometrySha256": [
+        "e2a7c29ef030e3fe609cba462e23f4f8de1c8610c3076746476a26a45b52f450",
+        "45477291693fafce001484bdc9bc017fabada7283c59d403ea283f6025efac42",
+        "4282c7ebe0754c81e3ba59dd8cac66aa88aa6616ad78207c6397f8513dedb2d3",
+        "477862b89a377036c5c427fe87e5e505aa335db4e921cdd27c58cc0a6b4eb6f4"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "132f53af3ebb37811ceabe13191924ee92186b8e516db91b7fbb111bfae0efa1",
+          "decodedRgbaSha256": "132f53af3ebb37811ceabe13191924ee92186b8e516db91b7fbb111bfae0efa1",
+          "bytes": 1894786
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "bd4c5a230ea618188e402bc07489da12c18831acae35786e887fd92dfafd17ed",
+          "decodedRgbaSha256": "bd4c5a230ea618188e402bc07489da12c18831acae35786e887fd92dfafd17ed",
+          "bytes": 426160
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "b7fb7376e6f6848c7713d09a2ddd402d9bd409f12b24ea38766db8175a5525ef",
+          "decodedRgbaSha256": "b7fb7376e6f6848c7713d09a2ddd402d9bd409f12b24ea38766db8175a5525ef",
+          "bytes": 420976
+        }
+      ]
+    },
+    {
+      "id": "ruins",
+      "sourceSha256": "2e7ed96758c031e2ebe80abd6ad57f75c84cf396d7a1baee55eb44894a17dfb8",
+      "runtimeSha256": "4309c556eafb39f2c706dfa66d499daea00ed47ab8a5dd8dffd6c04267593ac6",
+      "sourceBytes": 15576576,
+      "runtimeBytes": 3278524,
+      "geometrySha256": [
+        "eb49257004efb37a3f04b083b372f8bba10213ab0470aabd5c8f553a0c725ee6",
+        "028c69629c25a8f07e4df4af1f2eb10b62b50f15af60299d41ebb1744e9dd7bd",
+        "89d2859b512b7b28d7e8a2b3ef9cb909a5da212cbb7ee4e90fcb0e887ab022ef",
+        "df130b4d07f88de8b4323b2c411591a3276a35c26db80b7f1dbea7e9850a9682"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "a3930e0e3ebe307b494f513fa1dc20d3ac398fac984859af0b458b8913621911",
+          "decodedRgbaSha256": "a3930e0e3ebe307b494f513fa1dc20d3ac398fac984859af0b458b8913621911",
+          "bytes": 1921437
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "c97ff0fdab47b2a5ab18f0bbdb5aeeb8dc1fd8641a7302a23d5cc6d2b195f8be",
+          "decodedRgbaSha256": "c97ff0fdab47b2a5ab18f0bbdb5aeeb8dc1fd8641a7302a23d5cc6d2b195f8be",
+          "bytes": 392805
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "5bd559b03f4032e1b3716b200ba7b41be5103208ebcd8d95c22ad2ddf603a726",
+          "decodedRgbaSha256": "5bd559b03f4032e1b3716b200ba7b41be5103208ebcd8d95c22ad2ddf603a726",
+          "bytes": 423797
+        }
+      ]
+    },
+    {
+      "id": "smithy",
+      "sourceSha256": "6eb650efdc108beadf009c36ed7dc18b45d72aa9c9b7f502829ce62036c003a3",
+      "runtimeSha256": "c873a5962ec30e94d66f7e6daa9379fa05d438490a2db8640ba220d5388b72b1",
+      "sourceBytes": 17865480,
+      "runtimeBytes": 3659284,
+      "geometrySha256": [
+        "5e93c4ca2b00a7a688c2e176be5d318e75eceffbf566a3198872664ea28c8ad8",
+        "0a4fa8805080da237fd4ba24c11ec6e29bbd698c4a82db27aaa4c34f192ccc34",
+        "24fd4afc6f7f47ee479cb9751813a9e24ce2c34df35b1c72bf413cde57c95772",
+        "f9c3367f73b262846d83cb5b25d5dfcd0b36a76f48be2e7bcf7a0ec4d6566604"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "878e7517757714d1bcaddacb01ae2ead528eff594518f36c41e99ca439360d5c",
+          "decodedRgbaSha256": "878e7517757714d1bcaddacb01ae2ead528eff594518f36c41e99ca439360d5c",
+          "bytes": 2087009
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "aec7b4c7c9fe15566f985b79945eeb12f0a899e5553b869d94c824eb1e16c312",
+          "decodedRgbaSha256": "aec7b4c7c9fe15566f985b79945eeb12f0a899e5553b869d94c824eb1e16c312",
+          "bytes": 385561
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "d9e13a8f1bf95c3a8e414832a556cda8caef44ef0af20b63f117f7f346f5d8f9",
+          "decodedRgbaSha256": "d9e13a8f1bf95c3a8e414832a556cda8caef44ef0af20b63f117f7f346f5d8f9",
+          "bytes": 443705
+        }
+      ]
+    },
+    {
+      "id": "tree",
+      "sourceSha256": "4a70a0dbcdb69eacfa95500b9819501a137b30de1ddb6b3247c88196b48dd0c7",
+      "runtimeSha256": "45a8ad1182058066d77adcbbe88b5581d718596590a7463fbaba775398cd0eb1",
+      "sourceBytes": 11524700,
+      "runtimeBytes": 2752484,
+      "geometrySha256": [
+        "a99dc5127071b303f31cb334ca9e7336b3f597179b4e5d65f876a5d6929a2921",
+        "bf199148e97c730038c27422b416d5f2f4528563e2e39a2168c9f297941e0cdb",
+        "206f6a8b50a5848f806c7fca4f65eccc827786bf356cc9858336b53e669ff756",
+        "69d76fa3b26fe5e0cb58fec65d579bd93754b4cf8f4eee25e639a5540d96d3b1"
+      ],
+      "images": [
+        {
+          "index": 0,
+          "role": "map",
+          "roles": [
+            "map"
+          ],
+          "width": 1024,
+          "height": 1024,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "0a2255be86c43bface958dfb58ac036407290877f0b99da2eaee1b01919b4fb5",
+          "decodedRgbaSha256": "0a2255be86c43bface958dfb58ac036407290877f0b99da2eaee1b01919b4fb5",
+          "bytes": 1570300
+        },
+        {
+          "index": 1,
+          "role": "roughnessMap",
+          "roles": [
+            "roughnessMap",
+            "metalnessMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 2048,
+          "sourceHeight": 2048,
+          "rgbaSha256": "d41da1c992ce29b0924a7e0543384fef67be1e64834845d0a2031734cf7e08e3",
+          "decodedRgbaSha256": "d41da1c992ce29b0924a7e0543384fef67be1e64834845d0a2031734cf7e08e3",
+          "bytes": 322427
+        },
+        {
+          "index": 2,
+          "role": "normalMap",
+          "roles": [
+            "normalMap"
+          ],
+          "width": 512,
+          "height": 512,
+          "sourceWidth": 4096,
+          "sourceHeight": 4096,
+          "rgbaSha256": "26e4b0b312731490651bc4ba62b634942b2f201e273a4203267425ee45d4df57",
+          "decodedRgbaSha256": "26e4b0b312731490651bc4ba62b634942b2f201e273a4203267425ee45d4df57",
+          "bytes": 320957
+        }
+      ]
+    }
+  ]
+}

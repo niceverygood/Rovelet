@@ -1,0 +1,90 @@
+# This file's SHA identifies the offline texture policy across operating systems.
+src/texture-policy.js text eol=lf
+*.glb binary
+# Keep exact verification JSON bytes stable for recorded evidence SHA256 values.
+verification/**/*.json text eol=lf
+*-verification*.json text eol=lf
+# Frozen support bundles contain byte-pinned original drafts and raw logs.
+verification/hp-damage/support/** -text
+verification/construction/support/** -text
+verification/village-camera/support/** -text
+verification/placement-hint/support/** -text
+verification/native-persistence/support/** -text
+verification/audio-context/support/** -text
+verification/native-runtime/support/** -text
+verification/native-runtime/support-final/** -text
+verification/native-runtime/archive-preparation/** -text
+verification/native-runtime/result-audit/** -text
+
+mobile/** -text
+tests/mobile-packaging.test.js -text
+verification/native-package/** -text
+
+verification/pause-save-toast/** -text
+tests/pause-save-toast.test.js -text
+
+verification/native-title-back/** -text
+tests/native-title-back.test.js -text
+
+verification/native-splash/** -text
+verification/native-runtime-deployment-bounded/** -text
+tests/native-splash.test.js -text
+
+verification/native-legal-viewer/** -text
+tests/native-credits-viewer.test.js -text
+tests/native-license-notices.test.js -text
+
+verification/android-binary-notices/** -text
+tests/android-binary-notices.test.js -text
+
+verification/native-privacy-viewer/** -text
+tests/native-privacy.test.js -text
+
+src/enemy-motion.js -text
+tests/charge-transition.test.js -text
+verification/charge-motion-observation/** -text
+verification/charge-motion-paired/** -text
+
+ROADMAP.md -text
+PROGRESS.md -text
+DECISIONS.md -text
+BLOCKERS.md -text
+.gitattributes -text
+
+src/hp-damage-visual.js -text
+tests/hp-damage-visual.test.js -text
+tests/hp-damage-roof-apex.test.js -text
+verification/hp-smoke-apex/** -text
+
+src/world.js -text
+src/game.js -text
+src/regions.js -text
+src/campaign.js -text
+src/ui.js -text
+src/locales/catalog.json -text
+src/style.css -text
+tests/construction-integration.test.js -text
+tests/village-regional-hubs.test.js -text
+verification/village-regional-hubs/** -text
+
+LICENSES.md -text
+public/licenses.html -text
+tests/native-license-notices.test.js -text
+tests/medium-wheel-notices.test.js -text
+verification/medium-wheel-notices/** -text
+
+src/hp-damage-visual.js -text
+verification/hp-smoke-warm-tint/** -text
+
+verification/current-performance/** -text
+
+verification/native-final-sync/** -text
+
+verification/native-gameplay-final/** -text
+releases/mobile/source69-gameplay-20261018-unsigned/** -text
+
+verification/model-transport-block/** -text
+README-NATIVE.md -text
+
+# Preserve byte-pinned source and regression fixtures in this source snapshot.
+* -text

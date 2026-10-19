@@ -1,0 +1,25 @@
+{
+  "schema": "hearth-native-local-packaging-v1",
+  "ready": false,
+  "signingAllowed": false,
+  "platform": "both",
+  "workspaceRoot": null,
+  "mobileSourceFiles": null,
+  "dependencyFiles": null,
+  "tools": {
+    "node": null,
+    "java": null,
+    "javaRelease": null,
+    "sdkRoot": null,
+    "sdkPins": null
+  },
+  "product": {
+    "version": null,
+    "package": null,
+    "sourceFiles": null,
+    "distFiles": null,
+    "assetVersions": null,
+    "runtimeAssets": null
+  },
+  "note": "Unpinned final product. ready is an internal completeness guard, not a new human permission requirement. No native operation has run."
+}

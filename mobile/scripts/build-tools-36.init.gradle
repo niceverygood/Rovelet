@@ -1,0 +1,8 @@
+// Select already installed Build Tools for every application/library; never download another SDK.
+gradle.beforeProject { p ->
+    ['com.android.application', 'com.android.library'].each { pluginId ->
+        p.pluginManager.withPlugin(pluginId) {
+            p.extensions.getByName('android').buildToolsVersion = '36.0.0'
+        }
+    }
+}

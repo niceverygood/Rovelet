@@ -1,0 +1,2 @@
+export const RUNTIME_LIMITS=Object.freeze({enemies:24,particles:190,meshyShards:24,smoke:100,flashes:48,projectiles:192,advancedProjectiles:160,devices:16,diamonds:144});
+export function mergeDrop(drops,position,value,gold){if(drops.length<RUNTIME_LIMITS.diamonds)return false;let closest=drops[0],distance=Infinity;for(const drop of drops){const d=drop.mesh.position.distanceToSquared(position);if(d<distance){distance=d;closest=drop;}}closest.value+=value;closest.gold=(closest.gold??2)+gold;return true;}

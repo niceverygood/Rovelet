@@ -1,0 +1,199 @@
+{
+  "auditedAt": "2026-10-18",
+  "assets": [
+    {
+      "id": "castle-medium",
+      "taskId": "01a14508-248e-731d-9536-5a85ebaa32ab",
+      "file": "models/castle-medium.glb",
+      "reference": "references/castle-medium.png",
+      "sha256": "e852db96e1ae7f529ddaac233480acf3300bae182d48068afdd15ff98b72f338",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "castle-small",
+      "taskId": "01a1450c-ee74-71e2-8587-06cc50cf50c7",
+      "file": "models/castle-small.glb",
+      "reference": "references/castle-small.png",
+      "sha256": "656b9d727f12344cd9c999ecf4f8757eaf83265b53eea2f923440797aabf96f9",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "castle-large",
+      "taskId": "01a1450d-2537-718a-be5f-8a8cfb908afb",
+      "file": "models/castle-large.glb",
+      "reference": "references/castle-large.png",
+      "sha256": "5055348daf3d8da7972e270b96ab98fac9cf7cbcd2aa75987cc6fd1af3a37dbe",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "enemy-tower",
+      "taskId": "01a1450d-5c1f-72d1-9a9c-27ae3fa65692",
+      "file": "models/enemy-tower.glb",
+      "reference": "references/enemy-tower.png",
+      "sha256": "c38591ea6feeb2f2713b2c9f2290dccecaf2d5f05e76f3855e2d3bb296951bad",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "tree",
+      "taskId": "01a1450d-9238-72f0-8155-11aaaced902f",
+      "file": "models/tree.glb",
+      "reference": "references/tree.png",
+      "sha256": "4a70a0dbcdb69eacfa95500b9819501a137b30de1ddb6b3247c88196b48dd0c7",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "ruins",
+      "taskId": "01a14511-ded8-728a-8bdc-b7e7bf9069f0",
+      "file": "models/ruins.glb",
+      "reference": "references/ruins.png",
+      "sha256": "2e7ed96758c031e2ebe80abd6ad57f75c84cf396d7a1baee55eb44894a17dfb8",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "house",
+      "taskId": "01a14512-14f5-750f-ab8d-19eec56b2803",
+      "file": "models/house.glb",
+      "reference": "references/house.png",
+      "sha256": "c1f586057962bedfa9a2d3bfdc6f7c23431e78b06514ac0b36335c493a028867",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "smithy",
+      "taskId": "01a14512-4c30-747b-ab5d-54873736a7aa",
+      "file": "models/smithy.glb",
+      "reference": "references/smithy.png",
+      "sha256": "6eb650efdc108beadf009c36ed7dc18b45d72aa9c9b7f502829ce62036c003a3",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "greenhouse",
+      "taskId": "01a14512-8318-7677-8ab0-f692b62adc00",
+      "file": "models/greenhouse.glb",
+      "reference": "references/greenhouse.png",
+      "sha256": "aa6673466f7cb63333205ed30ff9bd88f4a9cfb6271fe7c2af2924ecd6cc6a5e",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "cannon",
+      "taskId": "01a14512-b958-72d3-8a76-88855b850c80",
+      "file": "models/cannon.glb",
+      "reference": "references/cannon.png",
+      "sha256": "2831eaba10d6fa3cc9ddbef126f05a6853a7303dbbbd5465487b3f39781c08bd",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "beehive",
+      "taskId": "01a14512-ef52-75a5-946e-ff81f8204539",
+      "file": "models/beehive.glb",
+      "reference": "references/beehive.png",
+      "sha256": "4c7d230322776e546117840299f202997e4f3b17a7dad64b5f92472aa39d6c95",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "ballista",
+      "taskId": "01a14513-24dd-76a8-bb5f-be7ccb9ed6fa",
+      "file": "models/ballista.glb",
+      "reference": "references/ballista.png",
+      "sha256": "ad34e88c4e682ba33de5bdb2cc3eba618a2dd16a263d862ed7676e23af545c5d",
+      "generator": "Meshy",
+      "rights": "Plan at generation unverified; Meshy attribution supplied. Reference-image rights require owner confirmation.",
+      "changes": "Runtime texture downscaling, mechanical wheel/barrel articulation, scale and material tinting."
+    },
+    {
+      "id": "projectile-ironshot",
+      "taskId": "01a14a9a-7001-7286-86b4-fdbfce45ed4b",
+      "previewTaskId": "01a14a98-1400-73f9-916a-8e3d8bbef582",
+      "resource": "text-to-3d",
+      "file": "models/projectile-ironshot.glb",
+      "reference": null,
+      "prompt": "prompts/projectile-ironshot.json",
+      "sha256": "86ee33018d86bb1f429fb5b49195f46595dbc7f03ef799886a9fbf2cf0351486",
+      "generator": "Meshy CLI 0.4.0 / Meshy 7.1",
+      "consumedCredits": 30,
+      "stageCosts": {
+        "preview": 20,
+        "refine": 10
+      },
+      "taskLineage": [
+        {
+          "stage": "preview",
+          "task_id": "01a14a98-1400-73f9-916a-8e3d8bbef582",
+          "resource": "text-to-3d",
+          "status": "SUCCEEDED",
+          "consumed_credits": 20,
+          "operation_id": "e7c510c5-7e0b-48bf-9930-2843ae304fee"
+        },
+        {
+          "stage": "refine",
+          "task_id": "01a14a9a-7001-7286-86b4-fdbfce45ed4b",
+          "parent_task_id": "01a14a98-1400-73f9-916a-8e3d8bbef582",
+          "resource": "text-to-3d",
+          "status": "SUCCEEDED",
+          "consumed_credits": 10,
+          "operation_id": "66960f54-a4ba-493a-84b8-6e0810e83d90"
+        }
+      ],
+      "rights": "Created from project-authored text without an image input. Generation account plan and applicable commercial terms remain unverified; Meshy attribution is provided.",
+      "changes": "Runtime texture downscaling; shared authored PBR geometry and textures; centered/scaled projectile visual with independent pooled instance materials."
+    },
+    {
+      "id": "impact-shard",
+      "taskId": "01a14aac-7ebc-75a6-acc3-501b93f5f106",
+      "previewTaskId": "01a14aab-048d-711c-b7fb-25de2ab1b66f",
+      "resource": "text-to-3d",
+      "file": "models/impact-shard.glb",
+      "reference": null,
+      "prompt": "prompts/impact-shard.json",
+      "sha256": "6fda42d69068846593bb24b5319ba6eb563fe503fe643637df1d4560205b0fd0",
+      "generator": "Meshy CLI 0.4.0 / Meshy 7.1",
+      "consumedCredits": 30,
+      "stageCosts": {
+        "preview": 20,
+        "refine": 10
+      },
+      "taskLineage": [
+        {
+          "stage": "preview",
+          "task_id": "01a14aab-048d-711c-b7fb-25de2ab1b66f",
+          "resource": "text-to-3d",
+          "status": "SUCCEEDED",
+          "consumed_credits": 20,
+          "operation_id": "6048fa9d-1103-400f-b789-432b8552aa4e"
+        },
+        {
+          "stage": "refine",
+          "task_id": "01a14aac-7ebc-75a6-acc3-501b93f5f106",
+          "parent_task_id": "01a14aab-048d-711c-b7fb-25de2ab1b66f",
+          "resource": "text-to-3d",
+          "status": "SUCCEEDED",
+          "consumed_credits": 10,
+          "operation_id": "4b71c560-acb1-4cce-8a73-796521ff6a52"
+        }
+      ],
+      "rights": "Created from project-authored text without an image input. Generation account plan and applicable commercial terms remain unverified; Meshy attribution is provided.",
+      "changes": "Runtime texture downscaling; shared PBR geometry/textures; centered .16m visual and independent pooled instance materials, capped24; engine gravity, spin, bounce and fade."
+    }
+  ]
+}

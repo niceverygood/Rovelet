@@ -1,0 +1,27 @@
+IMAGE GENERATION: built-in image_gen. Original reference: public/references/moodboard.png.
+
+Common reference prompt: faithful isolated image-to-3D asset reference matching the supplied casual game image, same colors, silhouette and materials; centered whole object, transparent background, orthographic three-quarter view, no scenery or text.
+
+castle-medium: the EXACT player moving castle in the CENTER of the supplied gameplay screenshot, two large red-roof cream stone towers and one short rear turret, teal riveted chassis, four thick wood wheels, balcony with pink flowers, green leaf banner, tiny hanging lantern. Faithfully reproduce its structure and proportions. NO cannon projectile, NO smoke.
+
+castle-small: a starter version of that same player castle: ONE squat cream stone tower with red conical roof, compact teal riveted wooden chassis, four chunky little wooden wheels, single green leaf banner and short chimney. Same cream stone, coral roof and teal material. NO smoke.
+
+castle-large: a bigger cumulative version of that same center player castle: FOUR squat cream stone red-roof towers clustered on elongated teal chassis, SIX thick wood wheels, wooden flower balconies, small green leaf banners and brass pipes. Keep same chunky proportions, about 1.5x wider than medium. NO smoke.
+
+enemy-tower: the small ENEMY WHEELED TOWER at bottom-right of supplied image: single squat cream stone tower, little red conical roof, brown wood chassis with four wheels, short brass cannon on side, red crown banner. Exact casual look. NO smoke or projectiles.
+
+tree: one rounded broadleaf TREE from left edge of reference screenshot, warm brown branching trunk, multiple soft rounded lobes of fresh green foliage, subtly hand painted, broad dense crown with visible trunk. Full tree including trunk base. No ground platform.
+
+ruins: a single ruined cream stone arch made of chunky irregular rounded blocks as at upper-right of reference screenshot, broken side wall of same stone attached to left, no plants or ground. Friendly stylized proportions.
+
+house: a compact timber-and-cream-plaster villager COTTAGE matching castle materials: squat proportions, terracotta roof, oak door, small windows, wood balcony with pink flowers, tiny chimney. A stationary HOUSE, no wheels.
+
+smithy: a compact open-front village BLACKSMITH WORKSHOP in the exact same casual 3D material style: squat cream stone and warm timber, terracotta roof, teal metal door, visible small glowing forge and anvil under porch, tool sign, wood chimney. Stationary building, no wheels.
+
+greenhouse: a small village GREENHOUSE in the same rounded casual fantasy style: timber and honey brass frame, pale blue transparent glass pitched roof, cream stone base, green herbs and flowers clearly inside, small brown door, teal trim. Stationary building, no wheels.
+
+cannon: a short chunky brass and black iron CANNON module on a small oak-and-teal rectangular mount matching castle side cannon in supplied screenshot, wide barrel pointing left, subtle rivets, compact proportions. Only weapon and mounting base, no castle or wheels.
+
+beehive: a squat straw BEEHIVE weapon module on a small oak-and-teal rectangular mounting base, honey-gold layered woven dome, round dark entrance and brass fastening. Matches sunny rounded casual fantasy castle. No flying bees or effects.
+
+ballista: a compact timber BALLISTA weapon module on oak-and-teal rectangular mount, bronze fittings, broad curved wooden crossbow arms with taut string and one brass arrow, rounded chunky proportions, same warm casual fantasy materials. No castle.

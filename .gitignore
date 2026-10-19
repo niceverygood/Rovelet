@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.pipeline/
+.env*
+*.log
+
+outputs/
+
+
+test-last.txt
+releases/
+.hearth-server.json
+asset-staging/

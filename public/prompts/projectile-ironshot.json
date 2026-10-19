@@ -1,0 +1,9 @@
+{
+  "type": "text-to-3d",
+  "asset": "projectile-ironshot",
+  "ai_model": "meshy-7.1",
+  "prompt": "A single small stylized iron cannonball for a warm hand-painted fantasy moving-castle game. Round chunky closed sphere with a shallow brass equatorial seam and subtle hammered iron wear. One isolated compact object, no base, no scenery, no text, no flames, no smoke, no explosion sculpture. Readable silhouette at tiny gameplay size, centered object.",
+  "texture_prompt": "Warm hand-painted fantasy game material. Dark charcoal iron with subtle soft hammered wear, a narrow warm brass equatorial seam, muted teal patina in tiny worn spots. Clear iron versus brass response, soft readable color blocks, no text, no logos, no dramatic baked spotlight, no emissive fire. Match cream-stone and muted teal/brass moving-castle palette.",
+  "target_polycount": 600,
+  "texture_resolution": "2k"
+}

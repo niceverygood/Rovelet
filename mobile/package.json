@@ -1,0 +1,21 @@
+{
+  "name": "wandering-hearth-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prepared local native project; final game payload sync and unsigned builds are separate pinned stages.",
+  "packageManager": "npm@11.17.0",
+  "dependencies": {
+    "@capacitor/android": "8.5.3",
+    "@capacitor/app": "8.1.2",
+    "@capacitor/cli": "8.5.3",
+    "@capacitor/core": "8.5.3",
+    "@capacitor/haptics": "8.0.2",
+    "@capacitor/ios": "8.5.3",
+    "@capacitor/preferences": "8.0.1",
+    "@noble/hashes": "2.4.0"
+  },
+  "scripts": {
+    "sync:local": "node scripts/sync.cjs",
+    "android:unsigned": "node scripts/build-android.cjs"
+  }
+}

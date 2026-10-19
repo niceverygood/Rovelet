@@ -1,0 +1,536 @@
+{
+  "schema": 2,
+  "version": "1.0.0-rc.1",
+  "channel": "release-candidate",
+  "releaseReady": false,
+  "documentStatus": "Current unsigned gameplay native artifact evidence; normal15/FPS/OS/signing/rights/source ZIP remain incomplete",
+  "currentSourceFacts": {
+    "sourceFiles": 69,
+    "nativeStaticSourceFiles": 109,
+    "originalGLBs": 14,
+    "runtimeGLBs": 14,
+    "binaryFingerprintEntries": 71,
+    "mobileDependencies": 103,
+    "webVersion": "1.0.0-rc.1",
+    "nativeVersion": "1.0.0",
+    "nativeBuild": 1,
+    "provisionalAppId": "com.wanderinghearth.game",
+    "appName": "작은 성의 큰 여행",
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "weaponTypes": 30,
+    "stages": 15,
+    "regions": 3,
+    "constructionSeconds": [
+      10,
+      14,
+      18,
+      22,
+      26,
+      30
+    ],
+    "sourceFeatures": [
+      "village zoom/pan",
+      "3D cannon/impact shards",
+      "weapon-specific impact/audio",
+      "HP-derived cracks/scorch/smoke",
+      "native boot recovery + Preferences secondary mirror",
+      "App lifecycle/Android Back/Haptics",
+      "three village visual hubs, campaign1/6/11 gates, shared save/economy/facilities/residents",
+      "current medium parallel-wheel modification notice"
+    ],
+    "notProofOf": [
+      "new normal real-time15",
+      "physical device",
+      "60fps",
+      "save fsync/crash guarantee",
+      "commercial asset rights",
+      "store approval"
+    ],
+    "finalFutureInventoryMustBeRecaptured": true,
+    "nativeStaticSourceFilesScope": "109 current gameplay native source files bound to new unsigned build",
+    "sourceCountScope": "69 source files match build742a and source snapshot; final release/sourceZIP commit remains separately confirmed",
+    "sourceAssetTypes": {
+      "imageDerived": 12,
+      "textDerived": 2,
+      "newRightsClearance": false
+    },
+    "observedBaseWhole": {
+      "assertions": 1013,
+      "passed": true,
+      "focused": 38,
+      "scope": "ROOT79680b8 tint item actual whole/focused",
+      "receipt": {
+        "path": "outputs/wandering-hearth/verification/hp-smoke-warm-tint/support/root-review.json",
+        "bytes": 33019,
+        "sha256": "b5c10cd0f359f457de15ddb217f083552fd23ac1cdcf857c5bdd7dd6930b7574"
+      },
+      "doesNotApproveWholeSmokeReadability": true
+    },
+    "generationCredits": {
+      "total": 240,
+      "image12": 180,
+      "text2": 60,
+      "newDocumentAndTint": 0,
+      "provenance": {
+        "path": "outputs/wandering-hearth/asset-provenance.json",
+        "bytes": 8014,
+        "sha256": "58620e4268078bf4c276439c6c90970d86a4b8c8e002b6f2c16fd04f6d0ab8ed"
+      },
+      "rightsCleared": false
+    },
+    "latestWhole": {
+      "tests": 1013,
+      "pass": 1013,
+      "fail": 0,
+      "durationMs": 111941.3342,
+      "log": {
+        "path": "work/native-gameplay-final-whole-root.txt",
+        "bytes": 268105,
+        "sha256": "d8ebf1491b7b2d1384eaa8c2562ebf92790305f3b26a64bafebf10fcc7325661"
+      }
+    }
+  },
+  "currentStages": {
+    "dNativeNotices": {
+      "sourceIncluded": true,
+      "committedShort": "d52d42e8",
+      "status": "local browser/compiled HTTP complete; not OS/legal clearance",
+      "browserContexts": 5,
+      "fullScreenshots": 11
+    },
+    "eBinaryApacheNotices": {
+      "promoted": true,
+      "committedShort": "7d5b0f4c",
+      "status": "local Apache inventory/text/browser complete; not all-rights clearance",
+      "browserContexts": 5,
+      "fullScreenshots": 11
+    },
+    "fPrivacyViewer": {
+      "promoted": true,
+      "committedShort": "d9a4c41d",
+      "status": "fixed local bilingual draft/viewer/browser complete; public owner/contact/URL missing",
+      "browserContexts": 5,
+      "fullScreenshots": 22
+    },
+    "chargeAlignment": {
+      "e1SourceIncluded": true,
+      "e1Status": "Reserved-direction alignment and CPU defensive yaw cap regression completed",
+      "e2ActualCombinedNavigationPositiveReproduction": false,
+      "parentOpen": true,
+      "finalReceipt": null
+    },
+    "roofApexSmoke": {
+      "promoted": true,
+      "functionalAccepted": true,
+      "scope": "c.2 actual roof vertex/cache/recovery lifetime only",
+      "visualAccepted": false,
+      "rootVisualAccepted": false,
+      "previousVisualFailures": 3,
+      "fourthVisualHOLD": true,
+      "medium215BirthBlockedCases": 4,
+      "parentDamageOpen": true,
+      "c3ContrastReadabilityOpen": true
+    },
+    "regionalVillage": {
+      "promoted": true,
+      "completed": true,
+      "regions": [
+        "meadow",
+        "volcano",
+        "glacier"
+      ],
+      "campaignGates": [
+        1,
+        6,
+        11
+      ],
+      "sharedSaveEconomy": true,
+      "scope": "ROOT-reported current source and actual nine-screen review",
+      "finalReceipt": null
+    },
+    "mediumWheelNotice": {
+      "promoted": true,
+      "sourceCompleted": true,
+      "scope": "Current medium parallel-wheel modification appendix; no legal sufficiency or rights claim",
+      "finalReceipt": null
+    },
+    "warmTint": {
+      "sourceIncluded": true,
+      "sourceSha256": "44230cc21db9f4166df25be9ba5755e5fb140ea33c7998f4bee4d39b9b80acdb",
+      "rootItemCommitShort": "79680b8",
+      "wholePassed": true,
+      "whole": 1013,
+      "focused": 38,
+      "actualReport": {
+        "path": "outputs/wandering-hearth/verification/hp-smoke-warm-tint/2026-10-18T10-42-29-656Z-after-only-3d9a8dcc/report.json",
+        "bytes": 562476,
+        "sha256": "783f6e2c21ad45c4e78171d27c8e334aead1587268791bb1d145645af98b5e04"
+      },
+      "elapsedMs": 34992,
+      "rawPNG": 6,
+      "fullPNG": 6,
+      "errors": 0,
+      "warnings": 0,
+      "limitedTintAccepted": true,
+      "wholeSmokeReadabilityAccepted": false,
+      "parentOpen": true,
+      "matchedHistoricalPair": false,
+      "historicalHoldsReclassified": false
+    }
+  },
+  "actualExecutionCounts": {
+    "latestNormalRealTime15Completed": 0,
+    "physicalDeviceVerified": 0,
+    "iOSMacArchiveVerified": 0,
+    "finalNativeBuildInProgress": false,
+    "finalNativeUnsignedBuildCompleted": 1,
+    "finalNativeUnsignedOutputAuditCompleted": 1,
+    "nativeOSExecutionVerified": 0
+  },
+  "final": {
+    "sourceCommit": null,
+    "sourceSnapshot": {
+      "path": "work/native-final2-capture-runs/root-20261018/source.json",
+      "bytes": 10679,
+      "sha256": "0ef3ddb71af198cdf930ba140883f0432adad7b01dd71bd1e4f96dc4652bcedd"
+    },
+    "nativeSnapshot": {
+      "path": "work/native-final2-capture-runs/root-20261018/native.json",
+      "bytes": 19328,
+      "sha256": "09960e760f95dd31f578c517729e2d29f1c852928c2a983a489bd47fd524fc19"
+    },
+    "distSnapshot": {
+      "path": "work/native-final2-capture-runs/root-20261018/dist.json",
+      "bytes": 15055,
+      "sha256": "9b6d5409a899e00de4f634ad0534f8aa18aa5a451a47f8a41b97c11d86e7c67e"
+    },
+    "sourceFileCount": 69,
+    "nativeFileCount": 109,
+    "distFileCount": 91,
+    "webBuildReceipt": null,
+    "nativeSyncReceipt": {
+      "path": "outputs/wandering-hearth/mobile/.work/sync-2026-10-18T10-59-03-756Z/receipt.json",
+      "bytes": 21582,
+      "sha256": "09a874e5d452cd350acfdad1099e9cfad40eba04080f888e59e63e4791420144"
+    },
+    "androidBuildReceipt": {
+      "path": "outputs/wandering-hearth/mobile/.work/android-build-2026-10-18T11-18-14-556Z/receipt.json",
+      "bytes": 2203,
+      "sha256": "351e7aea3265d6fed5a0b08463f215ef7f8221804fc4fa4c57f94ae6c9c2e4e2"
+    },
+    "unsignedAPK": {
+      "path": "outputs/wandering-hearth/releases/mobile/source69-gameplay-20261018-unsigned/app-release-unsigned.apk",
+      "bytes": 81895568,
+      "sha256": "f3c055bf37f928ba77a13ea4069acf03a11235cab80fa7a8fd17a3f1434a5f2b"
+    },
+    "unsignedAAB": {
+      "path": "outputs/wandering-hearth/releases/mobile/source69-gameplay-20261018-unsigned/app-release.aab",
+      "bytes": 80888753,
+      "sha256": "3ce2538b8a52d0ea94fcaaa0be0575883834c696c3ed930fed5e78f98d84c281"
+    },
+    "outputAudit": {
+      "path": "work/mobile-m11/final-output-audit-runs/gameplay-final-20261018/receipt.json",
+      "bytes": 8348,
+      "sha256": "eca31a5d7a43b73aebf7d3034d5982acc860bda5b9767cc65b3dd1aea67dd023"
+    },
+    "bundleFormatValidation": {
+      "path": "work/bundletool-final-validate-runs/validate-20261018T112551-c063e341/receipt.json",
+      "bytes": 915,
+      "sha256": "139a18da4eef58bf30dff66cc27ef297e33c7546c9e278cebc0769ea2dfee4cb"
+    },
+    "normalCampaignPilot": {
+      "passed": false,
+      "report": {
+        "path": "work/native-campaign-runs/2026-10-18T11-09-14-296Z-pilot-180/report.json",
+        "bytes": 144311,
+        "sha256": "f4ce3fa20e3cc23c40d447123e503c5404fc3760099f621b9a7f2b0458e63799"
+      },
+      "cause": "UNCONFIRMED"
+    },
+    "normalCampaignFull15": null,
+    "currentPerformance": {
+      "rootItemCommitShort": "058e29b",
+      "report": {
+        "path": "outputs/wandering-hearth/verification/current-performance/2026-10-18T10-49-15-787Z-79680b8b/report.json",
+        "bytes": 67981,
+        "sha256": "3451841b32dcde84283cbf150bc7a6160ff75f75c0a5f057d6fb533aad349ff1"
+      },
+      "rootReview": {
+        "path": "outputs/wandering-hearth/verification/current-performance/support-current-root-20261018/root-review.json",
+        "bytes": 11127,
+        "sha256": "472889e3dca386ce4c000da2c101a2342a632f20f1c55584b6610a23113eb712"
+      },
+      "passed": false,
+      "measurementValidated": false,
+      "GLBError": "ERR_ABORTED",
+      "GLBErrorCount": 9,
+      "rawThresholdStatus": {
+        "meadow": "FAIL",
+        "volcano": "PASS",
+        "glacier": "FAIL"
+      },
+      "cause": "UNCONFIRMED",
+      "current60fpsAccepted": false
+    },
+    "androidGuestQA": null,
+    "physicalDeviceQA": null,
+    "iosMacCompileArchiveQA": null,
+    "iosDeviceQA": null,
+    "sourcePackageManifest": null,
+    "sourceZip": null,
+    "extractedSourceQA": null,
+    "releaseSignature": null,
+    "publicPrivacyPolicyUrl": null,
+    "publishedStoreRecord": null,
+    "currentTintWholeReceipt": null,
+    "currentTintVisualVerdict": null,
+    "nativeSourceFinal": null,
+    "latestActualNormal15": null,
+    "compiledSplashStatic": {
+      "path": "work/native-gameplay-final-splash-semantic-root.json",
+      "bytes": 707,
+      "sha256": "11dfbe1e6bb60403244487781a86fc2cba26b0d29fd854ff7cd28ccab24d45d2"
+    },
+    "unsignedExportManifest": {
+      "path": "outputs/wandering-hearth/releases/mobile/source69-gameplay-20261018-unsigned/manifest.json",
+      "bytes": 1393,
+      "sha256": "af4fc1d2b0e734c3783ce64b3cce8de5a0c64d35ab2f54eb3bc4cbf67dc3e217"
+    },
+    "nativeRootReview": {
+      "path": "outputs/wandering-hearth/verification/native-gameplay-final/root-review.json",
+      "bytes": 3228,
+      "sha256": "fc0d671e71073be76a1a3566bddc80081060fd5eb0d31d2458932efa6535316b"
+    },
+    "sourceZipDigestLocation": "External delivery manifest/SHA256 sidecar after ZIP creation; not embedded future own ZIP SHA"
+  },
+  "ownerFields": {
+    "developerLegalName": null,
+    "entityType": null,
+    "contactName": null,
+    "supportEmail": null,
+    "supportUrl": null,
+    "privacyPolicyUrl": null,
+    "marketingUrl": null,
+    "copyrightOwner": null,
+    "appleTeamId": null,
+    "googleDeveloperAccount": null,
+    "finalBundleOrPackageId": null,
+    "price": null,
+    "countries": null,
+    "targetAudience": null,
+    "ageRating": null
+  },
+  "interimAndroidC": {
+    "commit": "fadb286e9f2bbd164b8a6a8dce70d589bed4c0e7",
+    "scope": "Historical c splash unsigned interim; does not include later d/e/f/charge/apex/village/g/tint",
+    "buildReceipt": {
+      "path": "outputs/wandering-hearth/mobile/.work/android-build-2026-10-18T07-10-20-822Z/receipt.json",
+      "bytes": 2203,
+      "sha256": "ac3758b2bcd17cb12dffb97200ccbdd41e6f40cdcb94ac220642990b3ec56568"
+    },
+    "resourceRootReview": {
+      "path": "outputs/wandering-hearth/verification/native-splash/root-review.json",
+      "bytes": 4320,
+      "sha256": "ef88dd35619898da76f4f44be735030cdfb979d08551f6e58d2953f7330b7ed2"
+    },
+    "APK": {
+      "path": "android/app/build/outputs/apk/release/app-release-unsigned.apk",
+      "bytes": 81881240,
+      "sha256": "193ecf4fd63980b341c386ad3e56eb1003d75d030f2dade02b2650a3a49115d0"
+    },
+    "AAB": {
+      "path": "android/app/build/outputs/bundle/release/app-release.aab",
+      "bytes": 80874384,
+      "sha256": "c593bb25f43e45853542c1e056f75003eb05ca64fdd3978b421f3b58b600dcd1"
+    },
+    "signatureStatus": "unsigned; negative signature results are not signature success",
+    "sourceFiles": 69,
+    "distFiles": 90,
+    "runtimeGLBs": 14,
+    "binaryAssets": 71,
+    "legacySplashConfigurations": 11,
+    "layerBoxDP": 160,
+    "actualOSColdStart": false,
+    "API31MaskValidated": false,
+    "iOSCompiled": false,
+    "latestBundletoolValidated": false
+  },
+  "verifiedScope": "Current unsigned Android build + full payload/ZIP/unsigned-negative/16KiB/SDK/version + bundletool + compiled static splash links; no OS/device/Apple compile/signing/rights/normal15/FPS approval",
+  "blockers": [
+    "Latest normal long-run stopped: performance abort9/fresh pilot9/separateCDP canceled10; all14bodyreceived/modelsloaded does not erase errors; cause unconfirmed; latest15complete0",
+    "Current performance overallFAIL/measurementValidatedfalse;rawmeadow/glacierthresholdFAIL;60fpsnotaccepted",
+    "Small/full-plume readability c.3 and parent damage OPEN despite limited tint acceptance",
+    "Rights/signing/accounts/operator/contact/publicpolicyURL and OS/physical/Mac-iOS remain unverified",
+    "Current unsigned build/output/bundle/static-resource audit passed; native OS/Apple compile/signing/rights and final sourceZIP/extraction remain incomplete"
+  ],
+  "historicalEvidence": {
+    "source": "Original product RELEASE_STATUS.json, copied byte exact into before-draft",
+    "campaign": "2026-10-17 21:25 KST: e6a104b source,347 whole-suite tests passed. Normal accelerated1/30 engine regression completed15stages/30bosses/45flags/15unique settlements/18purchases;5544kills,27528reward,5565spent,initial140,final22103gold;raw11304.599999999204seconds=188.41minutes;1419checkpoints succeeded,15terminal skips,0failures;49source hashes and ending/credits/village/reload whole storage unchanged. Independent audit passed. See verification/campaign/2026-10-17T12-22-04-841Z-final-e6a104b3-seed20261017/report.json and independent-audit.json. Sampled-render engine proof does not imply human difficulty/FPS or physical-device/platform verification; browser-touch and package QA are separate evidence.",
+    "touch": "2026-10-17 21:31 KST: four fresh browser-emulated native-touch contexts passed (ko/en x320x568/844x390), with heading/button scrolling, initial/bottom HUD settings access, expected language transaction and otherwise exact storage,49source hashes unchanged,errors0. Not physical-mobile verification. See verification/release-touch/2026-10-17T12-31-27-557Z-601556a7/report.json and method-correction.json; the executed button margin was28px, correcting the unchanged report method text48px. Latest package fingerprints and verification records follow the original-project RELEASE_CHECKLIST.md and upper Wandering-Hearth-release-manifest.json.",
+    "performance": "Earlier GTX1060 1440x900 nominal60Hz budget passed. Final4c24d6f bounded1boss/24NPC/8weapon recheck: meadow56.541,volcano56.435,glacier56.281fps; p95 19.2/19.4/19.8ms,p99 20.7/20.9/22.5ms,max57.0/52.7/67.9ms. validationPASS/thresholdFAIL: means miss59.5fps. Blank-page performance.now56.042fps/RAF timestamp56.017fps. Each region rendered1800/1800 observed RAFs;49source hashes unchanged,errors0. This180warm+1800RAF fixture is not2boss/60second/physical-mobile/pure-production proof. Older107.5ms cause remains unverified. See performance-final-active-2026-10-17T11-57-56-702Z-4c24d6f4.json and PERFORMANCE.md.",
+    "blockers": [
+      "Input/reference-image ownership and generation-plan evidence remain unconfirmed (M8.4); attribution and third-party notices were inventoried in M8.2.",
+      "Physical mobile device and platform signing/review are not verified.",
+      "2026-10-17 21:00 KST bounded shared-desktop recheck averages56.281-56.541fps; blank Edge performance.now is56.042fps and RAF timestamp is56.017fps. Mean59.5fps acceptance fails; current60Hz acceptance remains pending."
+    ],
+    "oldVersion": "1.0.0-rc.1"
+  },
+  "missingNullIsNotPassed": true,
+  "currentPerformanceAttempt": {
+    "rootItemCommitShort": "058e29b",
+    "report": {
+      "path": "outputs/wandering-hearth/verification/current-performance/2026-10-18T10-49-15-787Z-79680b8b/report.json",
+      "bytes": 67981,
+      "sha256": "3451841b32dcde84283cbf150bc7a6160ff75f75c0a5f057d6fb533aad349ff1"
+    },
+    "rootReview": {
+      "path": "outputs/wandering-hearth/verification/current-performance/support-current-root-20261018/root-review.json",
+      "bytes": 11127,
+      "sha256": "472889e3dca386ce4c000da2c101a2342a632f20f1c55584b6610a23113eb712"
+    },
+    "passed": false,
+    "measurementValidated": false,
+    "GLBError": "ERR_ABORTED",
+    "GLBErrorCount": 9,
+    "rawThresholdStatus": {
+      "meadow": "FAIL",
+      "volcano": "PASS",
+      "glacier": "FAIL"
+    },
+    "cause": "UNCONFIRMED",
+    "current60fpsAccepted": false
+  },
+  "codeFrozenContext": {
+    "rootReportedHeadShort": "d3e5a7fd",
+    "sourceFiles": 69,
+    "testFiles": 116,
+    "wholeAssertions": 1013,
+    "hpMaterialSha256": "44230cc21db9f4166df25be9ba5755e5fb140ea33c7998f4bee4d39b9b80acdb",
+    "isFinalReleaseCommit": false,
+    "finalMapsStillNull": false,
+    "finalReleaseCommitConfirmed": false
+  },
+  "normalCampaignBlock": {
+    "status": "LATEST_LONG_RUN_STOPPED",
+    "cause": "UNCONFIRMED",
+    "observations": [
+      {
+        "scope": "Current performance attempt",
+        "abortCount": 9,
+        "report": {
+          "path": "outputs/wandering-hearth/verification/current-performance/2026-10-18T10-49-15-787Z-79680b8b/report.json",
+          "bytes": 67981,
+          "sha256": "3451841b32dcde84283cbf150bc7a6160ff75f75c0a5f057d6fb533aad349ff1"
+        }
+      },
+      {
+        "scope": "Fresh actual pilot",
+        "abortCount": 9,
+        "report": {
+          "path": "work/native-campaign-runs/2026-10-18T11-09-14-296Z-pilot-180/report.json",
+          "bytes": 144311,
+          "sha256": "f4ce3fa20e3cc23c40d447123e503c5404fc3760099f621b9a7f2b0458e63799"
+        }
+      },
+      {
+        "scope": "Separate CDP diagnostic",
+        "canceledCount": 10,
+        "report": {
+          "path": "work/model-network-diagnostic-root-20261018/report.json",
+          "bytes": 30914,
+          "sha256": "90239228d7b4cd8a77acfa2a56adb37d6816a0065fda0b13580ddead824452fa"
+        },
+        "requestedModels": 14,
+        "allDataBytesEqualContentLength": true,
+        "allHTTP200": true,
+        "loadedModelsWithMeshes": 14,
+        "canceledBeforeReady": 10
+      }
+    ],
+    "latestNormal15Completed": 0,
+    "performanceAccepted": false,
+    "errorFiltering": false,
+    "reclassifyPriorFailures": false
+  },
+  "nativeFinal2": {
+    "passed": true,
+    "input": {
+      "path": "outputs/wandering-hearth/mobile/inputs/android-gameplay-final.json",
+      "bytes": 464259,
+      "sha256": "742a78c89fa04ac68a63f05ba673afb513e0f2bb0148e09ef55d6129aa5ff49e"
+    },
+    "buildReceipt": {
+      "path": "outputs/wandering-hearth/mobile/.work/android-build-2026-10-18T11-18-14-556Z/receipt.json",
+      "bytes": 2203,
+      "sha256": "351e7aea3265d6fed5a0b08463f215ef7f8221804fc4fa4c57f94ae6c9c2e4e2"
+    },
+    "payload": {
+      "version": "1.0.0-rc.1",
+      "sourceFiles": 69,
+      "distFiles": 91,
+      "payloadFingerprint": "1a64c41786772cdc688e4b6c56bacf3d73d85ebe0b223b65f39f3d95d2144d25",
+      "assetBinaryCount": 71,
+      "runtimeGLBs": 14,
+      "NO_DEV": true,
+      "credentialPatternMatches": 0,
+      "buildFreshness": "Root-pinned package/source/dist tuple; script does not infer rebuild freshness from timestamps."
+    },
+    "APK": {
+      "path": "outputs/wandering-hearth/releases/mobile/source69-gameplay-20261018-unsigned/app-release-unsigned.apk",
+      "bytes": 81895568,
+      "sha256": "f3c055bf37f928ba77a13ea4069acf03a11235cab80fa7a8fd17a3f1434a5f2b"
+    },
+    "AAB": {
+      "path": "outputs/wandering-hearth/releases/mobile/source69-gameplay-20261018-unsigned/app-release.aab",
+      "bytes": 80888753,
+      "sha256": "3ce2538b8a52d0ea94fcaaa0be0575883834c696c3ed930fed5e78f98d84c281"
+    },
+    "outputAudit": {
+      "path": "work/mobile-m11/final-output-audit-runs/gameplay-final-20261018/receipt.json",
+      "bytes": 8348,
+      "sha256": "eca31a5d7a43b73aebf7d3034d5982acc860bda5b9767cc65b3dd1aea67dd023"
+    },
+    "bundletool": {
+      "path": "work/bundletool-final-validate-runs/validate-20261018T112551-c063e341/receipt.json",
+      "bytes": 915,
+      "sha256": "139a18da4eef58bf30dff66cc27ef297e33c7546c9e278cebc0769ea2dfee4cb"
+    },
+    "compiledStatic": {
+      "path": "work/native-gameplay-final-splash-semantic-root.json",
+      "bytes": 707,
+      "sha256": "11dfbe1e6bb60403244487781a86fc2cba26b0d29fd854ff7cd28ccab24d45d2"
+    },
+    "SDKMetadataPinsVerified": 5,
+    "fullSDKInventoryFourVerified": false,
+    "emulatorSDK563Claim": false,
+    "nativeOSExecuted": false,
+    "signing": false,
+    "releaseReady": false
+  },
+  "transportCounterfactual": {
+    "passed": false,
+    "final": true,
+    "errors": 14,
+    "warnings": 0,
+    "modelsParsed": 14,
+    "elapsedMs": 40792,
+    "cause": "UNCONFIRMED",
+    "oneExpressionGETLengthCounterfactual": true,
+    "errorsFiltered": false,
+    "gameSourceChanged": false,
+    "report": {
+      "path": "outputs/wandering-hearth/verification/model-transport-block/3-report.json",
+      "bytes": 32048,
+      "sha256": "9bafc426f0285cf95d91814573e72ae5aae79c9c5fef45b45e3edc641136c5e0"
+    },
+    "originalThreeFailuresPreserved": true
+  },
+  "documentIntegration": {
+    "nativeArtifactEvidenceCommit": "6f1a5ae625af04e1fda21fd6110bd36e1fbd7b12",
+    "sourceAndNativeUnchanged": true,
+    "finalPackageCommit": null
+  }
+}

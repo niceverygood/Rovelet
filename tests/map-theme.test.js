@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {mapTheme,mapPoint} from '../src/map-theme.js';
+test('each biome has distinct readable map terrain and hostile colors',()=>{const themes=['meadow','volcano','glacier'].map(mapTheme);assert.equal(new Set(themes.map(t=>t.ground)).size,3);for(const t of themes){assert.notEqual(t.enemy,t.ground);assert.notEqual(t.boss,t.ground);}assert.equal(mapTheme('unknown'),themes[0]);});
+test('town coordinates center the castle and keep moved facilities within the chart',()=>{assert.deepEqual(mapPoint(0,0),{x:50,y:50});assert.equal(mapPoint(14,-14).x,96);assert.equal(mapPoint(100,-100).y,0);});

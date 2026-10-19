@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "coins": 140,
+  "buildings": {
+    "garage": 0,
+    "smithy": 0,
+    "greenhouse": 0
+  },
+  "runs": 0,
+  "victories": 0,
+  "totalKills": 0,
+  "bestTime": 0,
+  "weapon": "cannon",
+  "settings": {
+    "sound": true,
+    "volume": 0.35,
+    "contrast": false,
+    "reducedMotion": false
+  },
+  "settledRuns": []
+}

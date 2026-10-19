@@ -1,0 +1,7 @@
+import {springStep} from './combat-feedback.js';
+export function terrainHeight(x,z){const edge=Math.max(Math.abs(x)-14,Math.abs(z)-14,0),mask=Math.max(0,Math.min(1,edge/10));const smooth=mask*mask*(3-2*mask);return smooth*(.25+Math.sin(x*.13)*Math.cos(z*.105)*.35+1.2*Math.exp(-((x-23)**2+(z-14)**2)/170)+.8*Math.exp(-((x+24)**2+(z+17)**2)/150));}
+export function terrainTilt(x,z,heading,wheelbase=2,track=1.4){const sx=Math.sin(heading),cz=Math.cos(heading),front=terrainHeight(x+sx*wheelbase*.5,z+cz*wheelbase*.5),rear=terrainHeight(x-sx*wheelbase*.5,z-cz*wheelbase*.5),right=terrainHeight(x+cz*track*.5,z-sx*track*.5),left=terrainHeight(x-cz*track*.5,z+sx*track*.5);return {pitch:-Math.atan2(front-rear,wheelbase),roll:Math.atan2(right-left,track)};}
+export function createContact(ground,drop=.18){return {height:ground+drop,velocity:0,compression:0,springVelocity:0,landed:false};}
+export function stepContact(state,ground,dt,reduced=false){let height=state.height,velocity=state.velocity,impact=0,remaining=Math.min(dt,.1);while(remaining>0){const h=Math.min(remaining,1/120);if(height>ground+.0001){velocity-=20*h;height+=velocity*h;}if(height<=ground){if(velocity<-.8)impact=Math.max(impact,-velocity);height=ground;velocity=0;}remaining-=h;}const spring=springStep(state.compression,state.springVelocity+impact*.28,dt,180,21);return {height:reduced?ground:height,velocity:reduced?0:velocity,compression:reduced?0:Math.max(-.035,Math.min(.13,spring.position)),springVelocity:reduced?0:spring.velocity,impact,reduced,landed:state.landed||impact>0};}
+
+

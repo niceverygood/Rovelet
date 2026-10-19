@@ -1,0 +1,217 @@
+{
+  "model": "meshy-t2.5",
+  "requested_triangles": 15000,
+  "generator": "Meshy CLI 0.4.0",
+  "texture_resolution": "4k",
+  "assets": [
+    {
+      "asset": "castle-medium",
+      "resource": "image-to-3d",
+      "task_id": "01a14508-248e-731d-9536-5a85ebaa32ab",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/castle-medium.glb",
+      "reference_file": "public/references/castle-medium.png",
+      "project_folder": ".pipeline/20261016_230546_castle-medium_01a14508"
+    },
+    {
+      "asset": "castle-small",
+      "resource": "image-to-3d",
+      "task_id": "01a1450c-ee74-71e2-8587-06cc50cf50c7",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/castle-small.glb",
+      "reference_file": "public/references/castle-small.png",
+      "project_folder": ".pipeline/20261016_231038_castle-small_01a1450c"
+    },
+    {
+      "asset": "castle-large",
+      "resource": "image-to-3d",
+      "task_id": "01a1450d-2537-718a-be5f-8a8cfb908afb",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/castle-large.glb",
+      "reference_file": "public/references/castle-large.png",
+      "project_folder": ".pipeline/20261016_231052_castle-large_01a1450d"
+    },
+    {
+      "asset": "enemy-tower",
+      "resource": "image-to-3d",
+      "task_id": "01a1450d-5c1f-72d1-9a9c-27ae3fa65692",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/enemy-tower.glb",
+      "reference_file": "public/references/enemy-tower.png",
+      "project_folder": ".pipeline/20261016_231106_enemy-tower_01a1450d"
+    },
+    {
+      "asset": "tree",
+      "resource": "image-to-3d",
+      "task_id": "01a1450d-9238-72f0-8155-11aaaced902f",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/tree.glb",
+      "reference_file": "public/references/tree.png",
+      "project_folder": ".pipeline/20261016_231120_tree_01a1450d"
+    },
+    {
+      "asset": "ruins",
+      "resource": "image-to-3d",
+      "task_id": "01a14511-ded8-728a-8bdc-b7e7bf9069f0",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/ruins.glb",
+      "reference_file": "public/references/ruins.png",
+      "project_folder": ".pipeline/20261016_231602_ruins_01a14511"
+    },
+    {
+      "asset": "house",
+      "resource": "image-to-3d",
+      "task_id": "01a14512-14f5-750f-ab8d-19eec56b2803",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/house.glb",
+      "reference_file": "public/references/house.png",
+      "project_folder": ".pipeline/20261016_231616_house_01a14512"
+    },
+    {
+      "asset": "smithy",
+      "resource": "image-to-3d",
+      "task_id": "01a14512-4c30-747b-ab5d-54873736a7aa",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/smithy.glb",
+      "reference_file": "public/references/smithy.png",
+      "project_folder": ".pipeline/20261016_231630_smithy_01a14512"
+    },
+    {
+      "asset": "greenhouse",
+      "resource": "image-to-3d",
+      "task_id": "01a14512-8318-7677-8ab0-f692b62adc00",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/greenhouse.glb",
+      "reference_file": "public/references/greenhouse.png",
+      "project_folder": ".pipeline/20261016_231644_greenhouse_01a14512"
+    },
+    {
+      "asset": "cannon",
+      "resource": "image-to-3d",
+      "task_id": "01a14512-b958-72d3-8a76-88855b850c80",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/cannon.glb",
+      "reference_file": "public/references/cannon.png",
+      "project_folder": ".pipeline/20261016_231657_cannon_01a14512"
+    },
+    {
+      "asset": "beehive",
+      "resource": "image-to-3d",
+      "task_id": "01a14512-ef52-75a5-946e-ff81f8204539",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/beehive.glb",
+      "reference_file": "public/references/beehive.png",
+      "project_folder": ".pipeline/20261016_231711_beehive_01a14512"
+    },
+    {
+      "asset": "ballista",
+      "resource": "image-to-3d",
+      "task_id": "01a14513-24dd-76a8-bb5f-be7ccb9ed6fa",
+      "status": "SUCCEEDED",
+      "consumed_credits": 15,
+      "model_file": "public/models/ballista.glb",
+      "reference_file": "public/references/ballista.png",
+      "project_folder": ".pipeline/20261016_231725_ballista_01a14513"
+    },
+    {
+      "asset": "projectile-ironshot",
+      "resource": "text-to-3d",
+      "task_id": "01a14a9a-7001-7286-86b4-fdbfce45ed4b",
+      "preview_task_id": "01a14a98-1400-73f9-916a-8e3d8bbef582",
+      "refine_task_id": "01a14a9a-7001-7286-86b4-fdbfce45ed4b",
+      "status": "SUCCEEDED",
+      "consumed_credits": 30,
+      "stage_costs": {
+        "preview": 20,
+        "refine": 10
+      },
+      "task_lineage": [
+        {
+          "stage": "preview",
+          "task_id": "01a14a98-1400-73f9-916a-8e3d8bbef582",
+          "resource": "text-to-3d",
+          "status": "SUCCEEDED",
+          "consumed_credits": 20,
+          "operation_id": "e7c510c5-7e0b-48bf-9930-2843ae304fee"
+        },
+        {
+          "stage": "refine",
+          "task_id": "01a14a9a-7001-7286-86b4-fdbfce45ed4b",
+          "parent_task_id": "01a14a98-1400-73f9-916a-8e3d8bbef582",
+          "resource": "text-to-3d",
+          "status": "SUCCEEDED",
+          "consumed_credits": 10,
+          "operation_id": "66960f54-a4ba-493a-84b8-6e0810e83d90"
+        }
+      ],
+      "model": "meshy-7.1",
+      "requested_triangles": 600,
+      "actual_triangles": 622,
+      "texture_resolution": "2k",
+      "topology": "triangle",
+      "model_file": "public/models/projectile-ironshot.glb",
+      "reference_file": null,
+      "prompt_file": "public/prompts/projectile-ironshot.json",
+      "sha256": "86ee33018d86bb1f429fb5b49195f46595dbc7f03ef799886a9fbf2cf0351486",
+      "project_folder": "asset-staging/2026-10-17T16-00-31-816Z-physical-impact/meshy_output/20261018_010050_projectile-ironshot_01a14a98",
+      "created_at": "2026-10-17T16:06:40.824Z"
+    },
+    {
+      "asset": "impact-shard",
+      "resource": "text-to-3d",
+      "task_id": "01a14aac-7ebc-75a6-acc3-501b93f5f106",
+      "preview_task_id": "01a14aab-048d-711c-b7fb-25de2ab1b66f",
+      "refine_task_id": "01a14aac-7ebc-75a6-acc3-501b93f5f106",
+      "status": "SUCCEEDED",
+      "consumed_credits": 30,
+      "stage_costs": {
+        "preview": 20,
+        "refine": 10
+      },
+      "task_lineage": [
+        {
+          "stage": "preview",
+          "task_id": "01a14aab-048d-711c-b7fb-25de2ab1b66f",
+          "resource": "text-to-3d",
+          "status": "SUCCEEDED",
+          "consumed_credits": 20,
+          "operation_id": "6048fa9d-1103-400f-b789-432b8552aa4e"
+        },
+        {
+          "stage": "refine",
+          "task_id": "01a14aac-7ebc-75a6-acc3-501b93f5f106",
+          "parent_task_id": "01a14aab-048d-711c-b7fb-25de2ab1b66f",
+          "resource": "text-to-3d",
+          "status": "SUCCEEDED",
+          "consumed_credits": 10,
+          "operation_id": "4b71c560-acb1-4cce-8a73-796521ff6a52"
+        }
+      ],
+      "model": "meshy-7.1",
+      "requested_triangles": 150,
+      "actual_triangles": 156,
+      "texture_resolution": "2k",
+      "topology": "triangle",
+      "model_file": "public/models/impact-shard.glb",
+      "reference_file": null,
+      "prompt_file": "public/prompts/impact-shard.json",
+      "sha256": "6fda42d69068846593bb24b5319ba6eb563fe503fe643637df1d4560205b0fd0",
+      "project_folder": "asset-staging/2026-10-17T16-21-05-467Z-impact-shard/meshy_output/20261018_012147_impact-shard_01a14aab",
+      "created_at": "2026-10-17T16:26:03.154Z"
+    }
+  ],
+  "topology": "smart-topology",
+  "total_credits": 240,
+  "asset_defaults_scope": "Original twelve image-to-3d assets. New assets have explicit per-asset model, topology and texture overrides."
+}

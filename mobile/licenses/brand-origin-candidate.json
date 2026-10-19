@@ -1,0 +1,66 @@
+{
+  "ready": false,
+  "rootVisualApproved": false,
+  "replacementApproved": false,
+  "productionFaviconChanged": false,
+  "origin": "Original hand-authored SVG/path and VectorDrawable candidate made for this project in this WORK task; extends the existing project favicon code vocabulary. No downloaded icon, font, raster input, generated bitmap, Meshy extraction or third-party logo.",
+  "sourceFavicon": {
+    "path": "outputs/wandering-hearth/public/favicon.svg",
+    "bytes": 339,
+    "sha256": "06a2f66688dcda3ea090015c243376e49ca4d9dbe4f5461839d3a39678f2083e"
+  },
+  "sourceLicense": "Existing project favicon ownership/license must be confirmed by the owner; no new public open-source license or exclusive-copyright guarantee is granted by this draft.",
+  "palette": {
+    "background": "#E3EBD2",
+    "wall": "#FFF0CF",
+    "roof": "#DA6848",
+    "roofShade": "#BB503B",
+    "cart": "#4F8F8A",
+    "wood": "#805936",
+    "woodLight": "#B18351",
+    "window": "#6B5140",
+    "flag": "#397F4C"
+  },
+  "foregroundBounds": {
+    "minX": 27,
+    "maxX": 79,
+    "minY": 26,
+    "maxY": 79
+  },
+  "safeZone": {
+    "viewport": [
+      108,
+      108
+    ],
+    "center": [
+      54,
+      54
+    ],
+    "centralSquare": [
+      21,
+      21,
+      87,
+      87
+    ],
+    "circleRadius": 33,
+    "designMaximumRadiusUpperBound": 32,
+    "method": "Polygon vertices plus wheel-circle center distance + radius; no visual mask rendering done"
+  },
+  "android": {
+    "adaptiveLayers": "108dp foreground and solid color background, no prebaked corner mask or shadow",
+    "legacy": "48dp vector viewport108; resource candidate only, no launcher/device compile validation",
+    "themedMonochrome": "Not supplied in this minimal candidate; optional follow-up after approval"
+  },
+  "apple": {
+    "png1024": "Deferred to root render/asset-catalog step after visual approval",
+    "iconComposer": "Current Apple tool/asset-catalog pipeline must be selected on macOS; SVG is not a store-ready iOS icon"
+  },
+  "googlePlay": {
+    "png512": "Deferred to root render; launcher XML does not replace store PNG"
+  },
+  "officialSources": [
+    "https://developer.android.com/develop/ui/compose/system/icon_design_adaptive",
+    "https://developer.apple.com/help/app-store-connect/manage-app-information/add-an-app-icon/",
+    "https://support.google.com/googleplay/android-developer/answer/9866151?hl=en"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "text-to-3d",
+  "asset": "impact-shard",
+  "ai_model": "meshy-7.1",
+  "prompt": "A single small closed bevelled irregular iron chunk for an impact fragment in a warm hand-painted fantasy moving-castle game. A compact solid dark iron fragment with one worn muted teal metal plate and one small brass rivet. Chunky readable silhouette, softly bevelled edges, no holes, no disconnected parts. One isolated object only, no scene, no base, no smoke, no fire, no text, no explosion statue.",
+  "texture_prompt": "Warm hand-painted fantasy game material. Dark charcoal iron with soft hammered wear and bevel highlights, a worn muted teal metal plate with chipped paint, and one warm brass rivet. Distinguish iron, painted teal and brass with readable muted color blocks. No text, no logos, no dramatic baked spotlight, no emissive fire. Match the warm cream-stone and muted teal/brass moving-castle palette.",
+  "target_polycount": 150,
+  "texture_resolution": "2k"
+}

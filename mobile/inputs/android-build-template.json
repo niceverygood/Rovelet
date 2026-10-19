@@ -1,0 +1,27 @@
+{
+  "schema": "hearth-native-local-packaging-v1",
+  "ready": false,
+  "signingAllowed": false,
+  "platform": "android",
+  "operation": "unsigned-release",
+  "workspaceRoot": null,
+  "mobileSourceFiles": null,
+  "dependencyFiles": null,
+  "syncReceipt": null,
+  "tools": {
+    "node": null,
+    "java": null,
+    "javaRelease": null,
+    "sdkRoot": null,
+    "sdkPins": null
+  },
+  "product": {
+    "version": null,
+    "package": null,
+    "sourceFiles": null,
+    "distFiles": null,
+    "assetVersions": null,
+    "runtimeAssets": null
+  },
+  "note": "Clone the successful sync product block unchanged; pin the post-sync mobile source map and sync receipt. No final build or signing has run."
+}

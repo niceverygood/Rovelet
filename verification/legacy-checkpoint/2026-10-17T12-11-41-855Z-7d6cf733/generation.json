@@ -1,0 +1,250 @@
+{
+  "status": "generated",
+  "generatedAt": "2026-10-17T12:11:43.075Z",
+  "historicalRevision": "7d6cf733a745c5760d254bc2e95d512bea1a278a",
+  "historicalVersion": "0.1.0",
+  "sources": {
+    "src/artillery.js": {
+      "originalSha256": "1a41a160892026ea1ead8d9ec1d7bc38376f2a075f0027e3a219c6d64f4ee92d",
+      "extractedSha256": "75a3d20bdcc1107e265f3c3457d582ff3ebadf0200d298083178dc7fe409185c",
+      "onlyBareThreeImportRewritten": true
+    },
+    "src/combat-feedback.js": {
+      "originalSha256": "760a7f43759f76533a7514a14b773d969db5b37240698b1e6787c140ac2b3a15",
+      "extractedSha256": "ceb2d65c8b8b46c6e7c1e7d1c1448532edc31196b2303cf4f0f0d194566ad011",
+      "onlyBareThreeImportRewritten": true
+    },
+    "src/data.js": {
+      "originalSha256": "40293d741569f5cb39f5225c575bedf1e36b46623293b9762217854fda4e3f98",
+      "extractedSha256": "40293d741569f5cb39f5225c575bedf1e36b46623293b9762217854fda4e3f98",
+      "onlyBareThreeImportRewritten": false
+    },
+    "src/drive.js": {
+      "originalSha256": "c3003b933d6a991ad9dc5ea994828f96ae4c9c681d43aa95c5d36502d5b18dbb",
+      "extractedSha256": "c3003b933d6a991ad9dc5ea994828f96ae4c9c681d43aa95c5d36502d5b18dbb",
+      "onlyBareThreeImportRewritten": false
+    },
+    "src/enemy-bars.js": {
+      "originalSha256": "967ca408f029bb447067688b7960d96391bd68fc13ae3fdab138340baaa80f61",
+      "extractedSha256": "967ca408f029bb447067688b7960d96391bd68fc13ae3fdab138340baaa80f61",
+      "onlyBareThreeImportRewritten": false
+    },
+    "src/game.js": {
+      "originalSha256": "0a09ae0864cb9f7ec5209565911c4d6fcff49b2bcea2c8cae540cbd5d23527ba",
+      "extractedSha256": "02375a937106bafeb37c8e0bdb424f58205489d1b6cbc8fb809d1fd941ae536e",
+      "onlyBareThreeImportRewritten": true
+    },
+    "src/loot.js": {
+      "originalSha256": "497891f18937141e7dd53d4675886c5f910d0330e610f41e6a7247849729a40f",
+      "extractedSha256": "2a72f98ec9cb1ba0ec71580942fcec26d7b3c0b22ba81b886020443f5ec1c8bc",
+      "onlyBareThreeImportRewritten": true
+    },
+    "src/main.js": {
+      "originalSha256": "93213cac7db7644747e3aef98b7293e9cc0ff105e457f7012678aa75da74a234",
+      "extractedSha256": "93213cac7db7644747e3aef98b7293e9cc0ff105e457f7012678aa75da74a234",
+      "onlyBareThreeImportRewritten": false
+    },
+    "src/persistence.js": {
+      "originalSha256": "7fa73e40547a46b6ed67a28174acd57f9119fdada7a2de741704975ec9f4dd64",
+      "extractedSha256": "7fa73e40547a46b6ed67a28174acd57f9119fdada7a2de741704975ec9f4dd64",
+      "onlyBareThreeImportRewritten": false
+    },
+    "src/residents.js": {
+      "originalSha256": "6548c23270e0c3d9f29f9a36d4b44deeeb719f82e1cb660de49e75cb74d996d8",
+      "extractedSha256": "7ca0ff506b89174db5a52ebe3c8cb4a17e5a1a73030bff5d277c5e034a667809",
+      "onlyBareThreeImportRewritten": true
+    },
+    "src/style.css": {
+      "originalSha256": "1bc2bb996b6d7ecffa5896905f57c8ca9ddacd718ba06d0f0f8223f3730507a4",
+      "extractedSha256": "1bc2bb996b6d7ecffa5896905f57c8ca9ddacd718ba06d0f0f8223f3730507a4",
+      "onlyBareThreeImportRewritten": false
+    },
+    "src/ui.js": {
+      "originalSha256": "c173a20d1969d35e39e037012f1ca0f4cdc719d49fa3488d152cc5c337caedf2",
+      "extractedSha256": "c173a20d1969d35e39e037012f1ca0f4cdc719d49fa3488d152cc5c337caedf2",
+      "onlyBareThreeImportRewritten": false
+    },
+    "src/village-layout.js": {
+      "originalSha256": "911c649d6bf7715b169992de6fca3ce7255b96008497a85aff0a06f30826bf5f",
+      "extractedSha256": "911c649d6bf7715b169992de6fca3ce7255b96008497a85aff0a06f30826bf5f",
+      "onlyBareThreeImportRewritten": false
+    },
+    "src/wheels.js": {
+      "originalSha256": "4421bc28dd08f2d97b613e235b195fb8b50d2677dc97cb24e313e933e62b5e80",
+      "extractedSha256": "a3d89264bcf799f1c01d4f4385ec42bef97c53dc8aadccbb038a87b5fbc66297",
+      "onlyBareThreeImportRewritten": true
+    },
+    "src/world.js": {
+      "originalSha256": "53379bf844189780b516cc99ae9d583d0e5c6f39b46da286b0a03475bda9ae59",
+      "extractedSha256": "120a423137e1b64be6be43a1b843a312a20d5eaecf137dee5df3aebdc66fa007",
+      "onlyBareThreeImportRewritten": true
+    }
+  },
+  "threeUrl": "file:///C:/Users/nicev/Documents/Codex/2026-10-16/new-chat-2/outputs/wandering-hearth/node_modules/.pnpm/three@0.186.1/node_modules/three/build/three.module.js",
+  "seed": 20261017,
+  "tick": 0.03333333333333333,
+  "ticks": 480,
+  "initial": {
+    "run": {
+      "id": "3f70d4c0-8549-4951-9a3b-c8b1c6b57da3",
+      "time": 0,
+      "coins": 0,
+      "kills": 0,
+      "level": 1,
+      "xp": 0,
+      "stage": 1,
+      "hp": 220,
+      "maxHp": 220,
+      "weapons": {
+        "cannon": 1
+      },
+      "cooldowns": {},
+      "spawnTimer": 3,
+      "boostCd": 0,
+      "boostTime": 0,
+      "shieldCd": 0,
+      "shieldTime": 0,
+      "repairCd": 0,
+      "invuln": 3,
+      "bossSpawned": false,
+      "settled": false,
+      "outcome": null,
+      "choices": [],
+      "eliteTimer": 65
+    },
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "far": {
+      "id": "e25d460b-6023-4acd-8199-f2acdc9614af",
+      "attack": 1.8287112270481884,
+      "position": [
+        45,
+        0,
+        0
+      ]
+    }
+  },
+  "final": {
+    "run": {
+      "id": "3f70d4c0-8549-4951-9a3b-c8b1c6b57da3",
+      "time": 15.999999999999954,
+      "coins": 0,
+      "kills": 0,
+      "level": 1,
+      "xp": 0,
+      "stage": 1,
+      "hp": 220,
+      "maxHp": 220,
+      "weapons": {
+        "cannon": 1
+      },
+      "cooldowns": {
+        "cannon": -15.999999999999954
+      },
+      "spawnTimer": 1.8986363636363666,
+      "boostCd": 0,
+      "boostTime": 0,
+      "shieldCd": 0,
+      "shieldTime": 0,
+      "repairCd": 0,
+      "invuln": 0,
+      "bossSpawned": false,
+      "settled": false,
+      "outcome": null,
+      "choices": [],
+      "eliteTimer": 49.00000000000091
+    },
+    "position": [
+      -23.419601656692684,
+      0,
+      48
+    ],
+    "rotation": -0.45,
+    "far": {
+      "id": "e25d460b-6023-4acd-8199-f2acdc9614af",
+      "attack": -14.171288772951774,
+      "position": [
+        32.12452630820876,
+        0,
+        5.701152271480337
+      ]
+    },
+    "enemyCount": 9
+  },
+  "profile": {
+    "version": 1,
+    "coins": 140,
+    "buildings": {
+      "garage": 0,
+      "smithy": 0,
+      "greenhouse": 0
+    },
+    "runs": 0,
+    "victories": 0,
+    "totalKills": 0,
+    "bestTime": 0,
+    "weapon": "cannon",
+    "settings": {
+      "sound": true,
+      "volume": 0.35,
+      "contrast": false,
+      "reducedMotion": false
+    },
+    "settledRuns": []
+  },
+  "storageKeys": [
+    "wandering-hearth:v1",
+    "wandering-hearth:v1:backup",
+    "wandering-hearth:run"
+  ],
+  "negativeTimers": [
+    {
+      "kind": "cannon",
+      "attack": -14.171288772951774,
+      "position": [
+        32.12452630820876,
+        0,
+        5.701152271480337
+      ]
+    }
+  ],
+  "writes": [
+    {
+      "type": "set",
+      "key": "wandering-hearth:v1"
+    },
+    {
+      "type": "set",
+      "key": "wandering-hearth:v1:backup"
+    },
+    {
+      "type": "set",
+      "key": "wandering-hearth:v1"
+    },
+    {
+      "type": "remove",
+      "key": "wandering-hearth:run"
+    },
+    {
+      "type": "set",
+      "key": "wandering-hearth:run"
+    },
+    {
+      "type": "set",
+      "key": "wandering-hearth:run"
+    },
+    {
+      "type": "set",
+      "key": "wandering-hearth:run"
+    }
+  ],
+  "method": "Exact Git-root public 0.1.0 Game/persistence/data/drive/loot/artillery source. Only bare three import specifiers resolve to the local Three ESM file. Actual Game constructor/persist twice/start plus actual spawnEnemy(cannon,0,45), ordinary W input and 480 unmodified Game.updateRun(1/30) calls produce the live state. The old checkpointRun writer serializes the actual negative timer. No HP/time/timer/currency/run ID/weapon direct edits.",
+  "limits": "Historical method-level fixture, not a human run or a past user save. The explicit additional cannon distance45 is a legal spawn API fixture pose. Flat no-collision/no-render world, absent cannon rig (so no ballistic fire), silent UI/audio substitutes and deterministic Math.random are declared test boundaries. Normal spawn scheduling, movement, contacts, health, timer decay and automatic checkpoint calls remain unmodified. The old writer has no RUN backup; only real profile backup and RUN primary are exported. User4180 and .pipeline are never read.",
+  "fixtureSha256": {
+    "storage": "ef9a49b4a566dcc6e4d9c7f901b31e4842cb58d9a5ebd902527c3b3832962610",
+    "checkpoint": "f2f8fa4c9d1ccdce091db227927c0d5e1ebb817cceca9dadef98e581959bc9af"
+  }
+}

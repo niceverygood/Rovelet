@@ -1,0 +1,72 @@
+// WORK prototype. No Game/World/save/audio/renderer dependency; XZ positions only.
+export const ACTOR_COLLISION_PROVISIONAL=Object.freeze({iterations:8,recoverySpeed:6,maxFrameCorrection:.2,skin:.015,epsilon:1e-7,contactCooldown:.25,contactRetention:1,maxActors:41,maxPairs:1024,backtracks:6,bodyPadding:.04,radiusStep:.05});
+const finite=Number.isFinite,clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
+function excluded(node){return node.visible===false||node.userData?.wheel||node.userData?.wheelSourceArchive||node.userData?.derivedWheel||node.userData?.rollingDetail||node.userData?.attachment||node.name==='gun-yaw'||node.name==='drive-attachments';}
+
+// Creation-time only, before body lean/feedback/terrain compression. The caller caches
+// this scalar per fresh actor root; growth/resume create a new root and measure anew.
+export function measureBodyHull(root,options={}){
+ const model=root?.userData?.model;if(!model||!root.matrixWorld?.clone)throw Error('Fresh actual model/root required');
+ const padding=options.padding??ACTOR_COLLISION_PROVISIONAL.bodyPadding,step=options.radiusStep??ACTOR_COLLISION_PROVISIONAL.radiusStep;
+ if(!finite(padding)||padding<0||!finite(step)||step<=0)throw Error('Invalid body hull padding');
+ root.updateWorldMatrix(true,true);const inverse=root.matrixWorld.clone().invert(),min={x:Infinity,y:Infinity,z:Infinity},max={x:-Infinity,y:-Infinity,z:-Infinity},points=[];let radius=0,vertices=0,meshes=0;
+ function visit(node){if(excluded(node))return;if(node.isMesh){const p=node.geometry?.getAttribute('position');if(!p)throw Error('Body geometry missing POSITION');const matrix=inverse.clone().multiply(node.matrixWorld).elements,indices=node.geometry.index,used=indices?new Set(Array.from({length:indices.count},(_,i)=>indices.getX(i))):Array.from({length:p.count},(_,i)=>i);meshes++;
+  for(const i of used){const x=p.getX(i),y=p.getY(i),z=p.getZ(i),w=matrix[3]*x+matrix[7]*y+matrix[11]*z+matrix[15],point={x:(matrix[0]*x+matrix[4]*y+matrix[8]*z+matrix[12])/w,y:(matrix[1]*x+matrix[5]*y+matrix[9]*z+matrix[13])/w,z:(matrix[2]*x+matrix[6]*y+matrix[10]*z+matrix[14])/w};if(!Object.values(point).every(finite))throw Error('Nonfinite body vertex');for(const k of ['x','y','z']){min[k]=Math.min(min[k],point[k]);max[k]=Math.max(max[k],point[k]);}radius=Math.max(radius,Math.hypot(point.x,point.z));points.push(point);vertices++;}}
+  for(const child of node.children??[])visit(child);
+ }
+ visit(model);if(!vertices||!(radius>0))throw Error('Empty visible body hull');const circleRadius=Math.ceil((radius+padding)/step)*step,width=max.x-min.x,length=max.z-min.z,axis=length>=width?'z':'x',transverse=axis==='z'?'x':'z';let shape='circle',effectiveRadius=circleRadius,segmentMin=0,segmentMax=0;
+ if(Math.max(width,length)>Math.min(width,length)*1.35){shape='capsule';effectiveRadius=Math.ceil((Math.max(Math.abs(min[transverse]),Math.abs(max[transverse]))+padding)/step)*step;segmentMin=Infinity;segmentMax=-Infinity;for(const p of points){const cap=Math.sqrt(Math.max(0,effectiveRadius**2-p[transverse]**2));segmentMin=Math.min(segmentMin,p[axis]+cap);segmentMax=Math.max(segmentMax,p[axis]-cap);}if(segmentMin>segmentMax)segmentMin=segmentMax=(segmentMin+segmentMax)*.5;}
+ return Object.freeze({shape,radius:effectiveRadius,axis,segmentMin,segmentMax,circleRadius,rawRadius:radius,padding,radiusStep:step,min:Object.freeze(min),max:Object.freeze(max),meshes,vertices,excludes:'wheel subtree/hidden source archives/derived wheels/treads/gun-yaw/attached weapons; boss accent siblings are outside model'});
+}
+
+function staticDepth(position,radius,obstacles,bounds){let depth=0;for(const o of obstacles)depth=Math.max(depth,radius+o.radius-Math.hypot(position.x-o.x,position.z-o.z));if(bounds)depth=Math.max(depth,bounds.minX-position.x,position.x-bounds.maxX,bounds.minZ-position.z,position.z-bounds.maxZ);return Math.max(0,depth);}
+function segment(a){const h=a.hull;if(!h||h.shape==='circle')return [{x:a.position.x,z:a.position.z},{x:a.position.x,z:a.position.z}];const heading=a.root.rotation.y,s=Math.sin(heading),c=Math.cos(heading),x=h.axis==='x'?c:s,z=h.axis==='x'?-s:c;return [h.segmentMin,h.segmentMax].map(t=>({x:a.position.x+x*t,z:a.position.z+z*t}));}
+function closest(a,b){const [a0,a1]=segment(a),[b0,b1]=segment(b),ux=a1.x-a0.x,uz=a1.z-a0.z,vx=b1.x-b0.x,vz=b1.z-b0.z,wx=a0.x-b0.x,wz=a0.z-b0.z,A=ux*ux+uz*uz,B=ux*vx+uz*vz,C=vx*vx+vz*vz,D=ux*wx+uz*wz,E=vx*wx+vz*wz;let s=0,t=0;
+ if(A<=1e-12)t=C>1e-12?clamp(E/C,0,1):0;else if(C<=1e-12)s=clamp(-D/A,0,1);else{const den=A*C-B*B;s=den>1e-12?clamp((B*E-C*D)/den,0,1):0;t=(B*s+E)/C;if(t<0){t=0;s=clamp(-D/A,0,1);}else if(t>1){t=1;s=clamp((B-D)/A,0,1);}}
+ return [{x:a0.x+s*ux,z:a0.z+s*uz},{x:b0.x+t*vx,z:b0.z+t*vz}];}
+function pairNormal(a,b){const [pointA,pointB]=closest(a,b),dx=pointB.x-pointA.x,dz=pointB.z-pointA.z,distance=Math.hypot(dx,dz);if(distance>1e-10)return {x:dx/distance,z:dz/distance,distance,pointA,pointB};const cx=b.position.x-a.position.x,cz=b.position.z-a.position.z,centerDistance=Math.hypot(cx,cz);if(centerDistance>1e-10)return {x:cx/centerDistance,z:cz/centerDistance,distance:0,pointA,pointB};
+ // Stable supplied/spawn keys, never UUID or RNG. Four diagonals also allow wall sliding.
+ const h=((a.key*73856093)^(b.key*19349663))>>>0,angle=(h%4)*Math.PI/2+Math.PI/4;return {x:Math.cos(angle),z:Math.sin(angle),distance:0,pointA,pointB};}
+
+// Pure adapter helper: drive.dx/dz remain the requested integration, never add
+// solver displacement to distance or snap heading/steering. No-contact is exact.
+export function settleCollisionDrive(drive,{oldX,oldZ,position,oldSpeed,dt,touch}={}){
+ if(!drive||!touch||!finite(dt)||dt<=0)return drive;
+ const dx=drive.dx??0,dz=drive.dz??0,requested=dx*dx+dz*dz;
+ if(!finite(requested)||requested<=1e-20)return drive;
+ if(![oldX,oldZ,position?.x,position?.z,oldSpeed,drive.speed].every(finite))throw Error('Finite actual collision progress required');
+ const ratio=clamp(((position.x-oldX)*dx+(position.z-oldZ)*dz)/requested,0,1);
+ if(ratio===1)return drive;
+ const speed=drive.speed*ratio;return {...drive,speed,acceleration:(speed-oldSpeed)/dt};
+}
+
+export class ActorCollision{
+ constructor(options={}){this.options={...ACTOR_COLLISION_PROVISIONAL,...options};this.ids=new WeakMap();this.nextId=1;this.pairs=new Map();this.frame=0;this.current=null;this.lastMain=null;}
+ reset(){this.ids=new WeakMap();this.nextId=1;this.pairs.clear();this.frame=0;this.current=null;this.lastMain=null;}
+ step(actors,options={}){if(options.dt>0&&this.current?.dt>0&&options.now===this.current.now)throw Error('step already started this clock frame; use repair');return this.solve(actors,options,false);}
+ repair(actors,options=this.lastMain?.resolved){const c=options?.dt===0?this.lastMain:this.current;if(!c)throw Error('repair requires a preceding step');if(!options||options.dt!==c.dt||options.now!==c.now||options.obstacles!==c.obstacles||options.project!==c.project||(options.actorsParent??null)!==c.actorsParent)throw Error('repair must reuse exact same-frame dt/time/static context');return this.solve(actors,options,true);}
+ solve(actors,{dt,now,obstacles=[],project,actorsParent=null}={},repair=false){
+  if(!finite(dt)||dt<0||!finite(now)||typeof project!=='function')throw Error('Explicit finite dt/time and static projection required');
+  // A legal zero-dt main reads current contact only. Retain the positive main's
+  // spent/budget and exact repair context, including when this raw call uses a
+  // newly-created projection callback. Zero repairs reuse their own raw context.
+  let context;if(dt===0){if(repair)context=this.lastMain;else{context={dt,now,obstacles,project,actorsParent,resources:this.current?.now===now?this.current.resources:new WeakMap(),resolved:{dt,now,obstacles,project,actorsParent}};this.lastMain=context;if(!this.current||this.current.now!==now||this.current.dt===0)this.current=context;}}
+  else{if(!repair){this.current={dt,now,obstacles,project,actorsParent,resources:new WeakMap(),resolved:{dt,now,obstacles,project,actorsParent}};this.lastMain=this.current;}context=this.current;}
+  const o=this.options,rows=[],seen=new Set();for(const actor of actors){if((actor.hp??1)<=0||actor.retired||actorsParent&&actor.root?.parent!==actorsParent)continue;const root=actor.root,p=root?.position;if(!p||![p.x,p.z,actor.radius].every(finite)||actor.radius<=0)throw Error('Invalid live actor hull');if(actor.hull&&(!['circle','capsule'].includes(actor.hull.shape)||actor.hull.radius!==actor.radius||actor.hull.shape==='capsule'&&(!['x','z'].includes(actor.hull.axis)||![root.rotation.y,actor.hull.segmentMin,actor.hull.segmentMax].every(finite)||actor.hull.segmentMin>actor.hull.segmentMax)))throw Error('Invalid cached body hull');let key=actor.key;if(key===undefined){if(!this.ids.has(root))this.ids.set(root,this.nextId++);key=this.ids.get(root);}if(!Number.isSafeInteger(key)||key<0||seen.has(key))throw Error('Unique stable nonnegative actor key required');seen.add(key);const staticRadius=actor.staticRadius,inverseMass=actor.inverseMass??1;if(!finite(staticRadius)||staticRadius<=0||!finite(inverseMass)||inverseMass<0)throw Error('Explicit legacy static radius/inverse mass required');let resource=context.resources.get(root);if(resource&&resource.key!==key)throw Error('Same-frame actor key changed');if(!resource){resource={key,start:{x:p.x,z:p.z},spent:0,budget:Math.min(o.maxFrameCorrection,o.recoverySpeed*dt)};if(dt>0)context.resources.set(root,resource);}rows.push({...actor,key,position:p,staticRadius,inverseMass,...resource});}
+  if(rows.length>o.maxActors)throw Error('Declared actor capacity exceeded');rows.sort((a,b)=>a.key-b.key); // Local descriptors only; caller/Game arrays stay untouched.
+  if(dt>0&&!repair)this.frame++;
+  const collect=()=>{const contacts=[];for(let i=0;i<rows.length;i++)for(let j=i+1;j<rows.length;j++){const a=rows[i],b=rows[j],normal=pairNormal(a,b),depth=a.radius+b.radius-normal.distance;if(depth>=-o.skin){const id=a.key+'/'+b.key,previous=this.pairs.get(id),already=previous?.frame===this.frame,vx=(b.velocity?.x??0)-(a.velocity?.x??0),vz=(b.velocity?.z??0)-(a.velocity?.z??0),closingSpeed=Math.max(0,-vx*normal.x-vz*normal.z),entering=already?previous.entering:!previous||previous.frame!==this.frame-1,eligible=!repair&&dt>0&&!already&&(entering||closingSpeed>.05)&&(!previous||now-previous.emitted>=o.contactCooldown),point={x:(normal.pointA.x*b.radius+normal.pointB.x*a.radius)/(a.radius+b.radius),z:(normal.pointA.z*b.radius+normal.pointB.z*a.radius)/(a.radius+b.radius)};contacts.push({a:a.key,b:b.key,rootA:a.root,rootB:b.root,depth,normal:{x:normal.x,z:normal.z},point,closingSpeed,entering,emit:eligible});if(dt>0&&!repair)this.pairs.set(id,{frame:this.frame,entering,lastSeen:now,emitted:eligible?now:(previous?.emitted??-Infinity)});}}return contacts;};
+  const contactsBefore=collect();
+  let projections=0;
+  const constrain=(a,p)=>{project(p,a.staticRadius);projections++;if(a.bounds){p.x=clamp(p.x,a.bounds.minX,a.bounds.maxX);p.z=clamp(p.z,a.bounds.minZ,a.bounds.maxZ);}return p;};
+  const move=(a,nx,nz,amount)=>{let remaining=a.budget-a.spent;if(a.inverseMass===0||amount<=o.epsilon||remaining<=o.epsilon)return 0;amount=Math.min(amount,remaining);const old={x:a.position.x,y:a.position.y,z:a.position.z};for(let k=0;k<o.backtracks;k++){const p=constrain(a,{x:old.x+nx*amount,y:old.y,z:old.z+nz*amount}),dx=p.x-old.x,dz=p.z-old.z,length=Math.hypot(dx,dz),progress=dx*nx+dz*nz;if(finite(length)&&length<=remaining+o.epsilon&&progress>o.epsilon&&staticDepth(p,a.staticRadius,obstacles,a.bounds)<=o.epsilon){a.position.x=p.x;a.position.z=p.z;a.spent+=length;return progress;}amount*=.5;}return 0;};
+  const initialStatic=[];
+  for(const a of rows){const depth=staticDepth(a.position,a.staticRadius,obstacles,a.bounds);if(depth>o.epsilon){initialStatic.push({key:a.key,depth});if(dt>0&&a.inverseMass>0&&a.budget-a.spent>o.epsilon){const p=constrain(a,{x:a.position.x,y:a.position.y,z:a.position.z}),dx=p.x-a.position.x,dz=p.z-a.position.z,length=Math.hypot(dx,dz),scale=length?Math.min(1,(a.budget-a.spent)/length):0,candidate={x:a.position.x+dx*scale,z:a.position.z+dz*scale};if(staticDepth(candidate,a.staticRadius,obstacles,a.bounds)<depth-o.epsilon){a.position.x=candidate.x;a.position.z=candidate.z;a.spent+=length*scale;}}}}
+  if(dt>0)for(let pass=0;pass<o.iterations;pass++){let changed=false;for(let i=0;i<rows.length;i++)for(let j=i+1;j<rows.length;j++){const a=rows[i],b=rows[j],n=pairNormal(a,b),depth=a.radius+b.radius-n.distance;if(depth<=o.epsilon)continue;const total=a.inverseMass+b.inverseMass;if(!total)continue;let progress=move(a,-n.x,-n.z,depth*a.inverseMass/total)+move(b,n.x,n.z,depth*b.inverseMass/total),left=depth-progress;if(left>o.epsilon){progress+=move(a,-n.x,-n.z,left);left=depth-progress;if(left>o.epsilon)progress+=move(b,n.x,n.z,left);}if(progress<=o.epsilon&&(a.inverseMass===0||a.budget-a.spent>o.epsilon)&&(b.inverseMass===0||b.budget-b.spent>o.epsilon)){const sign=((a.key+b.key)&1)?1:-1,tx=-n.z*sign,tz=n.x*sign;progress+=move(a,tx,tz,Math.min(depth*.5,(a.budget-a.spent)*.5));progress+=move(b,-tx,-tz,Math.min(depth*.5,(b.budget-b.spent)*.5));}changed||=progress>o.epsilon;}if(!changed)break;}
+  const residual=[];for(let i=0;i<rows.length;i++)for(let j=i+1;j<rows.length;j++){const a=rows[i],b=rows[j],depth=a.radius+b.radius-pairNormal(a,b).distance;if(depth>o.epsilon)residual.push({a:a.key,b:b.key,depth});}
+  const contactsAfter=collect(),merged=new Map(contactsBefore.map(c=>[c.a+'/'+c.b,c]));for(const c of contactsAfter)if(!merged.has(c.a+'/'+c.b))merged.set(c.a+'/'+c.b,c);const contacts=[...merged.values()];
+  if(dt>0)for(const [id,p]of this.pairs){const [a,b]=id.split('/').map(Number);if(!seen.has(a)||!seen.has(b)||dt>0&&now-p.lastSeen>o.contactRetention)this.pairs.delete(id);}if(this.pairs.size>o.maxPairs)throw Error('Pair cache capacity exceeded');
+  if(dt>0)for(const a of rows)context.resources.set(a.root,{key:a.key,start:a.start,spent:a.spent,budget:a.budget});
+  const corrections=rows.map(a=>({key:a.key,x:a.position.x-a.start.x,z:a.position.z-a.start.z,pathLength:a.spent,budget:a.budget,staticDepth:staticDepth(a.position,a.staticRadius,obstacles,a.bounds)}));return {frame:this.frame,repair,contacts,contactsBefore,contactsAfter,corrections,residual,initialStatic,projections,actorCount:rows.length,pairCacheSize:this.pairs.size,fullySeparated:residual.length===0,postStaticClear:corrections.every(c=>c.staticDepth<=o.epsilon)};
+ }
+}

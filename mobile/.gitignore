@@ -1,0 +1,12 @@
+node_modules/
+.work/
+inputs/*-approved.json
+inputs/*-final.json
+android/local.properties
+android/.gradle/
+android/**/build/
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.mobileprovision
